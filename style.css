@@ -1,0 +1,152 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 70%; /* Could be more or less, depending on screen size */
+}
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+/* Set a style for all buttons */
+.button-F {
+    background-color: black;
+    margin: 8px 0;
+    border-radius: 10%;
+}
+.button-F2 {
+    background-color: rgb(37, 6, 46);
+    margin: 8px 8px;
+    border-radius: 10%;
+
+}
+.button-F, .button-F2 {
+
+    color: white;
+    padding: 14px 20px;
+
+    border: none;
+    cursor: pointer;
+    width: 35%;
+
+}
+button:hover, .button-F:hover {
+    opacity: 0.4;
+}
+body {font-family: Arial, Helvetica, sans-serif;
+width: 100%;}
+section{width: 100%;}
+/* Full-width input fields */
+.inputToP{width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    /* border-radius: 25%; */
+}
+.inputTS{width: 100%;
+    padding: 9px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    /* border-radius: 10%; */
+}
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+    width: 100%;
+}
+
+
+[class*="col-"]{
+    padding:0px;
+
+}
+.row{
+    margin: 0px;
+}
+/************************
+ *                      *
+ *                      *
+ *                      *
+ *     media curies     *
+ *                      *
+ *                      *
+ *                      *
+ ************************/
+@media screen and (max-width: 575px){
+   
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+}
+
+@media screen and (min-width: 992px){
+}
