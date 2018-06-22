@@ -55,3 +55,15 @@ iframe {
 
 #visiteurs img {
   width: 100%;
+}
+
+.col-md-4, .col-xs-4 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.card-header {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
