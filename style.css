@@ -2,7 +2,7 @@
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 10; /* Sit on top */
+    z-index: 100; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -18,7 +18,7 @@
     background-color: #fefefe;
     margin: 0% auto 0% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
-    width: 70%; /* Could be more or less, depending on screen size */
+    width: 80%; /* Could be more or less, depending on screen size */
     height: 90%;
     overflow-y: auto;
 }
@@ -40,8 +40,8 @@
 
 /* Add Zoom Animation */
 .animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
+    -webkit-animation: animatezoom 1s;
+    animation: animatezoom 1s
 }
 
 @-webkit-keyframes animatezoom {
@@ -121,8 +121,17 @@ img.avatar {
     padding: 16px;
     width: 100%;
 }
-
-
+.fuo{
+    background-color: yellow;
+    
+    
+}
+.colorRED{color: red}
+.colorBLUE{color: blue}
+.souligne{text-decoration: underline;
+}
+.gras{font-weight: bold;}
+.italique{font-style: italic;}
 [class*="col-"]{
     padding:0px;
 
@@ -130,6 +139,11 @@ img.avatar {
 .row{
     margin: 0px;
 }
+/*
+*/
+#PETERBOS, #brique-dor-2018-slrb, #PhareN133,#Vous-voulez-nous-contacter,#les-scientologues-forcent-la-cohabitation,
+#locametreWadesda
+{display: none;}
 /************************
  *                      *
  *                      *
