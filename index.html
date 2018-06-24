@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assent/style.css">
   </head>
   <body>
     <header>
@@ -21,8 +21,8 @@
 
             </div>
             <div class="col-8">
-                <div class="row mx-auto d-flex ">
-                    <div class="col-12">
+                <div class="row mx-auto d-flex" id="TabArticle">
+                    <div class="col-12 list-item-carte-Article">
                             <div class="card"onclick="document.location.href='https://www.dropbox.com/s/jmk8bztoyh20oke/PHARE%20134.pdf?dl=0'">
                                 <div class="card-header">
                                     <p class="text-center">Le Phare N°134</p>
@@ -39,7 +39,7 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 list-item-carte-Article">
                             <div class="card"onclick="document.location.href='https://www.dropbox.com/s/8w8ytuymdvtxn8y/RTBF%20Discrimination%20au%20logement%20les%20chiffres%20d%27Unia%20JT13h%2003_04_2018%20SL.TS?dl=0'">
                                 <div class="card-header">
                                     <p class="text-center">DISCRIMINATIONS AU LOGEMENT (vidéo)</p>
@@ -55,7 +55,7 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 list-item-carte-Article">
                         <div class="card"onclick="document.location.href='https://www.dropbox.com/s/kl5nilxdmqs6dhl/Ascenseurs%20en%20panne%20depuis%2015%20jours%20au%20Peterbos.mp4?dl=0'">
                             <div class="card-header">
                                 <p class="text-center">ACTION SYNDICALE AU PETERBOS (vidéo)</p>
@@ -72,7 +72,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 list-item-carte-Article">
                         <div class="card"onclick="document.location.href='http://www.radiopanik.org/emissions/la-voix-de-la-rue/acces-au-logement-et-precarite/'">
                             <div class="card-header">
                                 <p class="text-center">RADIO PANIK</p>
@@ -89,7 +89,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 list-item-carte-Article">
                         <div class="card"onclick="ouvrirModal('PETERBOS')">
                             <div class="card-header"> 
                                 <p class="text-center">ACTION DU SL AU PETERBOS</p>
@@ -106,7 +106,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 list-item-carte-Article">
                         <div class="card"onclick="ouvrirModal('PhareN133')">
                             <div class="card-header">
                                 <p class="text-center">LE PHARE N° 133</p>
@@ -123,7 +123,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12">
+                    <div class="col-12 list-item-carte-Article">
                         <div class="card">
                             <div class="card-header"> 
                                 <p class="text-center">COURS DE FORMATION 24 MAI 2018 ORGANISER ET ANIMER UNE RÉUNION COCOLO</p>
@@ -139,7 +139,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 list-item-carte-Article">
                         <div class="card"onclick="ouvrirModal('Vous-voulez-nous-contacter')">
                             <div class="card-header">
                                 <p class="text-center">VOUS VOULEZ NOUS CONTACTER ?</p>
@@ -173,7 +173,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 list-item-carte-Article">
                             <div class="card">
                                 <div class="card-header">
                                     <p class="text-center">FÊTE DU SQUARE ALBERT 12 MAI 2018</p>
@@ -189,7 +189,7 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 list-item-carte-Article">
                             <div class="card"onclick="ouvrirModal('les-scientologues-forcent-la-cohabitation')">
                                 <div class="card-header">
                                     <p class="text-center">Les scientologues forcent la cohabitation…</p>
@@ -201,7 +201,7 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 list-item-carte-Article">
                         <div class="card"onclick="ouvrirModal('brique-dor-2018-slrb')">
                             <div class="card-header">
                                 <p class="text-center">BRIQUE D’OR 2018 SLRB</p>
@@ -212,7 +212,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 list-item-carte-Article">
                             <div class="card" onclick="ouvrirModal('locametreWadesda')">
                                 <div class="card-header">
                                     <p class="text-center">Le locamètre, wadesda ?</p>
@@ -229,7 +229,7 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 list-item-carte-Article">
                             <div class="card">
                                 <div class="card-header">
                                     <p class="text-center">NOS HORAIRES</p>
@@ -245,7 +245,7 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 list-item-carte-Article">
                             <div class="card">
                                 <div class="card-header">
                                     <p class="text-center">PERMANENCES TÉLÉPHONIQUES JURIDIQUES</p>
@@ -265,7 +265,7 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 list-item-carte-Article">
                             <div class="card">
                                 <div class="card-header">
                                     <p class="text-center">AG LOCAMÈTRE</p>
@@ -281,7 +281,7 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 list-item-carte-Article">
                             <div class="card" onclick="ouvrirModal('LaFlandreInstitutionnaliseLesDiscriminationsAuLogement')">
                                 <div class="card-header">
                                     <p class="text-center">LA FLANDRE INSTITUTIONNALISE LES DISCRIMINATIONS AU LOGEMENT.</p>
@@ -297,7 +297,7 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 list-item-carte-Article">
                             <div class="card">
                                 <div class="card-header">
                                     <p class="text-center">COURS DE FORMATION CALCUL DU LOYER DANS LES LOGEMENTS SOCIAUX
@@ -314,7 +314,7 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 list-item-carte-Article">
                             <div class="card" onclick="ouvrirModal('PhareN132')">
                                 <div class="card-header">
                                     <p class="text-center">LE PHARE N°132</p>
@@ -325,7 +325,7 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 list-item-carte-Article">
                             <div class="card">
                                 <div class="card-header">
                                     <p class="text-center">BONNE ANNEE 2018</p>
@@ -341,7 +341,7 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 list-item-carte-Article">
                             <div class="card">
                                 <div class="card-header">
                                     <p class="text-center">FÊTES DE FIN D’ANNÉE
@@ -359,25 +359,8 @@
                             </div>
                     </div>
                     <!-- 
-                        <div class="col-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <p class="text-center"></p>
-                                <p></p>
-                            </div>
-                            <img class="card-img-top" src="./assent/img/" alt="Card image cap" onclick="document.location.href=''">
-                            <div class="card-body">
-                                <p></p>
-                                <p></p>
-                                    
-                                
-                            </div>
-                            <div class="card-footer">
-
-                            </div>
-                        </div>
-                    </div> 
-                <div class="col-12">
+                        
+                <div class="col-12 list-item-carte-Article">
                     <div class="card">
                         <div class="card-header"> 
                             <p class="text-center">ACTION DU SL AU PETERBOS</p>
@@ -414,6 +397,18 @@
                 </div>
                 -->
                 </div>
+                <nav aria-label="myNavigation">
+                    <ul class="pagination">
+                        <li id="previous-page">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+    
+                        
+                    </ul>
+                </nav>
             </div> 
         </div>
     </section>
@@ -895,7 +890,8 @@
                         </div>
                     </form>
                 </div>
-    <script src="script.js"></script>
+    <script src="./assent/script.js"></script>
+    <script src="./assent/pagination.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"crossorigin="anonymous"></script>
 
