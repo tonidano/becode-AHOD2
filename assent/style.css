@@ -121,6 +121,25 @@ img.avatar {
     padding: 16px;
     width: 100%;
 }
+footer{
+    margin-top:50px;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+	font-style: oblique;
+    color:azure;
+    widows: 100%;
+}
+.footerForm{
+    background-color:darkred;
+    margin: 0px;
+    padding: 0 16px;    
+    width: 100%;
+    box-sizing: border-box;
+}
+.footerForm #logo{width: 100%;}
+.footerForm [class*="col-"]{
+    padding:5px;
+
+}
 .fuo{
     background-color: yellow;
     
