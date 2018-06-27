@@ -1,6 +1,6 @@
 var limiteitem = 5,memotritab=0;
 let testval,
-memoval, nbART;
+memoval, nbART,memoNext;
 
 let memoArticle;
 
@@ -11,7 +11,7 @@ let btns = btnContainer.getElementsByClassName("btn");
 filterSelection("all",0);
 
 function filterSelection(c,demareArticle) {
-  var i,id;
+  var i,id,posiPages;
   
   
   memoArticle = document.getElementsByClassName("list-item-carte-Article");
@@ -23,106 +23,40 @@ function filterSelection(c,demareArticle) {
     w3RemoveClass(memoArticle[i], "show");	
   }
   for (i = memotritab; i < memoArticle.length; i++) {	
-	testval =memoArticle[i].className.indexOf(c);
+		testval =memoArticle[i].className.indexOf(c);
 	
 		//totalPages = Math.round(numberOfArticle / limiteitem);
     if ((testval > -1)&&(memoval < limiteitem)) {
       w3AddClass(memoArticle[i], "show");
       memoval++;}
-  }
-$(document).ready(function()
-  {
+	}
+	posiPages=(memotritab/5)+1;
 
-		var numberOfArticle = nbART.length;
+		$(document).ready(function()
+			{
 
-		var totalPages = Math.round(numberOfArticle / limiteitem);
+				var numberOfArticle = nbART.length;
 
-		$(".pagination").text("");
-		$('.pagination').append("<li id='previous-page' ><a class='page-link' href='#' aria-label='Previous'><span aria-hidden='true'>&laquo;</span><span class='sr-only'>Previous</span></a></li>");
-		$('.pagination').append("<li class='current-page active page-item' ><a class='page-link' href='#'>" + 1 + "</a></li>"); // append() signifie qu'on insère du contenu à la fin de la sélection ;
-		
-		/***faire une boucle pour ajouter des paginations par à port aux nombres de pages besoin***/
-		for (var i = 2; i <= totalPages; i++) {
-			$('.pagination').append("<li class='current-page page-item'><a class='page-link' href='#'>" + i + "</a></li>");
-			
-		}
-		$('.pagination').append("<li id='next-page'><a class='page-link' href='#' aria-label='Next'><span aria-hidden='true'>&raquo;</span><span class='sr-only'>Next</span></a></li>")
-	
-		$('.pagination li.current-page').on('click', function() {
-			
-			if($(this).hasClass('active')){
-				return false;
-			} else {
-				var currentPage = $(this).index();
-				console.log('Tu cliques sur ' + currentPage);
+				var totalPages = Math.round(numberOfArticle / limiteitem);
+				memoNext=totalPages+1;
+				$(".pagination").text("");
+				$('.pagination').append("<li id='previous-page' onclick='appel(0)'><a class='page-link' href='#' aria-label='Previous'><span aria-hidden='true'>&laquo;</span><span class='sr-only'>Previous</span></a></li>");
+				$('.pagination').append("<li class='current-page page-item' onclick='appel(1)'><a class='page-link' href='#'>" + 1 + "</a></li>"); // append() signifie qu'on insère du contenu à la fin de la sélection ;
 				
-				$('.pagination li').removeClass('active');
-				$(this).addClass('active');
-				memotritab=(5*(currentPage-1));
-				// $('#TabArticle .list-item-carte-Article').hide();
-				// var grandTotal = limitPerPage * currentPage;
-				// for (var i = grandTotal - limitPerPage; i < grandTotal; i++) {
-				// 	$('#TabArticle .list-item-carte-Article:eq(' + i + ')').show();
-				// }
-				////console.log('Tu cliques sur ' + currentPage);
-			}	//affiche();
-		});
-	
-		$('#next-page').on('click', function() {
-			var currentPage = $('.pagination li.active').index();
-			console.log(totalPages);
-			if (currentPage === totalPages) {
-				return false;
-			} else {
-				console.log(currentPage);
-				currentPage++;
-				memotritab+=5;
-				$('.pagination li').removeClass('active');
-				//console.log(currentPage);
-				// $('#TabArticle .list-item-carte-Article').hide();
-				// var grandTotal = limitPerPage * currentPage;
-				// for (var i = grandTotal - limitPerPage; i < grandTotal; i++) {
-				// 	$('#TabArticle .list-item-carte-Article:eq(' + i + ')').show();
-				// }
-				console.log(currentPage);
-				$('.pagination li.current-page:eq(' + (currentPage - 1) + ')').addClass('active');
-				console.log(currentPage);
-			};
-		});
-		$('#previous-page').on('click', function() {
-			var currentPage = $('.pagination li.active').index();
-			console.log(currentPage);
-			if (currentPage === 1) {
-				return false;
-			} else {
-				console.log(currentPage);
-				currentPage--;
-				memotritab-=5;
-				console.log(currentPage);
-				$('.pagination li').removeClass('active');
-				// $('#TabArticle .list-item-carte-Article').hide();
-				// var grandTotal = limitPerPage * currentPage;
-				// for (var i = grandTotal - limitPerPage; i < grandTotal; i++) {
-				// 	$('#TabArticle .list-item-carte-Article:eq(' + i + ')').show();
-				// }
-				
-				$('.pagination li.current-page:eq(' + (currentPage - 1 ) + ')').addClass('active');
-				console.log(currentPage);
-			}//affiche();
-			
-		});
-			/***Enlever les dièses dans l'url quand tu cliques sur un lien***/
-			/*ici je remplace javascript:void[0] (l'apparition du # dans l'url), plus clean 
-			(& empèche que quand tu cliques sur le lien cela remonte en haut)*/
+				/***faire une boucle pour ajouter des paginations par à port aux nombres de pages besoin***/
+				for (var i = 2; i <= totalPages; i++) {
+					$('.pagination').append("<li class='current-page page-item' onclick='appel("+i+")'><a class='page-link' href='#'>" + i + "</a></li>");
+					
+				}
+				$('.pagination').append("<li id='next-page' onclick='appel("+memoNext+")'><a class='page-link' href='#' aria-label='Next'><span aria-hidden='true'>&raquo;</span><span class='sr-only'>Next</span></a></li>")
+				$('.page-link').on('click',function(e) {	//Cette parti ce met à la fin car j'ai créé les boutton dans mon js
+						e.preventDefault();
+						//console.log('test');
+					});
 
-		$('.page-link').on('click',function(e) {	//Cette parti ce met à la fin car j'ai créé les boutton dans mon js
-				e.preventDefault();
-				//console.log('test');
+					
 			});
-
-			
-	});
-
+			document.getElementById('posiActu').innerHTML ="Vous est à la page N°"+posiPages;
 }
 function w3AddClass(element, name) {
   var i, arr1, arr2;
@@ -155,11 +89,36 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
-function appel(){
+function appel(posi){
+// 	modiPO(posi);
+// 	affiche();
+// }
+// 	function modiPO(val){
+			var position = posi
 				//console.log(memotritab);
+				$('.pagination li.active').removeClass('active');
+				var currentPage = posi;
+				console.log(currentPage);
+					if((currentPage<(memoNext))&&(currentPage>0)){
+									memotritab=(5*(currentPage-1));}
+					else{
+						if(((memotritab-5)>=0)&&(currentPage==0))
+								{memotritab-=5;
+									position-=1;}
+						else{position=1;}
+						
+						if(((memotritab+6)<(nbART.length))&&(currentPage==memoNext))
+								{memotritab+=5;
+									position+=1;}
+						else{position=memoNext-1;}
+					}
+
+ 			$('.pagination li.current-page:eq(' + (position - 1 ) + ')').addClass('active');
+				console.log(memotritab);
 				affiche();
-				//console.log(y);
-			}
+      
+	  
+		}
 function affiche(){
   y = document.getElementsByClassName("btn active");
       //console.log(y[0].id);
