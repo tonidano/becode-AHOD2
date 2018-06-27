@@ -1,6 +1,6 @@
 /* ---- button ---- */
 * { box-sizing: border-box; }
-.filterDiv {
+.list-item-carte-Article {
     /* background-color: #2196F3;
     color: #ffffff; */
     text-align: center;
@@ -10,11 +10,6 @@
   .show {
     display: block;
   }
-  
-  .container {
-    width: 100%;
-  }
-  
   /* Style the buttons */
   .btn {
     border: none;

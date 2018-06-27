@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assent/style.css">
+    <link rel="stylesheet" href="./assent/tableau-tri.css">
+    <link rel="stylesheet" href="./assent/">
     <!-- Bootstrap CSS 
 		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -55,17 +57,17 @@
                                         <li><a class="btn btn-default btn-outline btn-circle"  data-toggle="collapse" href="#nav-collapse1" aria-expanded="false" aria-controls="nav-collapse1" style="margin-top:0px;">Categories</a>
                 </li>
                       </ul>
-                                <ul class="collapse nav navbar-nav nav-collapse" id="navbar-collapse-1">
-                                    <li class="btn" filterSelection("action",0)><a>Action</a></li>
-                                    <li class="btn" filterSelection("art-pre",0)><a>Articles De Presse</a></li>
-                                    <li class="btn" filterSelection("forma",0)><a>Cours De Formation</a></li>
-                                    <li class="btn" filterSelection("com-pre",0)><a>Communiqués De Presse</a></li>
-                                    <li class="btn" filterSelection("phare",0)><a>Le Phare</a></li>
-                                    <li class="btn" filterSelection("syn-loc",0)><a>Syndicat des locataires</a></li>
-                                    <li class="btn" filterSelection("service",0)><a>Nos services</a></li>
-                                    <li class="btn" filterSelection("video",0)><a>Vidéo du Syndicat des locataires</a></li>
-                                    <li class="btn" filterSelection("info",0)><a>Info Pratiques</a></li>
-                                    <li class="btn active" filterSelection("all",0)><a>Aucune Catégorie</a></li>
+                                <ul class="collapse nav navbar-nav nav-collapse" id="nav-collapse1">
+                                    <li class="btn" onclick="filterSelection('action',0)" id="action"><a>Action</a></li>
+                                    <li class="btn" onclick="filterSelection('art-pre',0)" id="art-pre"><a>Articles De Presse</a></li>
+                                    <li class="btn" onclick="filterSelection('forma',0)"id="forma"><a>Cours De Formation</a></li>
+                                    <li class="btn" onclick="filterSelection('com-pre',0)"id="com-pre"><a>Communiqués De Presse</a></li>
+                                    <li class="btn" onclick="filterSelection('phare',0)"id="phare"><a>Le Phare</a></li>
+                                    <li class="btn" onclick="filterSelection('syn-loc',0)"id="syn-loc"><a>Syndicat des locataires</a></li>
+                                    <li class="btn" onclick="filterSelection('service',0)"id="service"><a>Nos services</a></li>
+                                    <li class="btn" onclick="filterSelection('video',0)"id="video"><a>Vidéo du Syndicat des locataires</a></li>
+                                    <li class="btn" onclick="filterSelection('info',0)"id="info"><a>Info Pratiques</a></li>
+                                    <li class="btn active" onclick="filterSelection('all',0)"id="all"><a>Aucune Catégorie</a></li>
                                 </ul>
 							</div><!-- /.navbar-collapse -->
 						</div><!-- /.container -->
@@ -79,8 +81,8 @@
             </div>
             <div class="col-8">
                 <div class="row mx-auto d-flex" id="TabArticle">
-                    <div class="col-12 list-item-carte-Article">
-                            <div class="card syn-loc phare"onclick="document.location.href='https://www.dropbox.com/s/jmk8bztoyh20oke/PHARE%20134.pdf?dl=0'">
+                    <div class="col-12 list-item-carte-Article syn-loc phare">
+                            <div class="card "onclick="document.location.href='https://www.dropbox.com/s/jmk8bztoyh20oke/PHARE%20134.pdf?dl=0'">
                                 <div class="card-header">
                                     <p class="text-center">Le Phare N°134</p>
                                     <p>par Syndicat des Locataires le 15 juin 2018 </p>
@@ -96,8 +98,8 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="col-12 list-item-carte-Article">
-                            <div class="card syn-loc video"onclick="document.location.href='https://www.dropbox.com/s/8w8ytuymdvtxn8y/RTBF%20Discrimination%20au%20logement%20les%20chiffres%20d%27Unia%20JT13h%2003_04_2018%20SL.TS?dl=0'">
+                    <div class="col-12 list-item-carte-Article  syn-loc video">
+                            <div class="card"onclick="document.location.href='https://www.dropbox.com/s/8w8ytuymdvtxn8y/RTBF%20Discrimination%20au%20logement%20les%20chiffres%20d%27Unia%20JT13h%2003_04_2018%20SL.TS?dl=0'">
                                 <div class="card-header">
                                     <p class="text-center">DISCRIMINATIONS AU LOGEMENT (vidéo)</p>
                                     <p>par Syndicat des Locataires le 13 juin 2018</p>
@@ -112,8 +114,8 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="col-12 list-item-carte-Article">
-                        <div class="card syn-loc action"onclick="document.location.href='https://www.dropbox.com/s/kl5nilxdmqs6dhl/Ascenseurs%20en%20panne%20depuis%2015%20jours%20au%20Peterbos.mp4?dl=0'">
+                    <div class="col-12 list-item-carte-Article syn-loc action">
+                        <div class="card "onclick="document.location.href='https://www.dropbox.com/s/kl5nilxdmqs6dhl/Ascenseurs%20en%20panne%20depuis%2015%20jours%20au%20Peterbos.mp4?dl=0'">
                             <div class="card-header">
                                 <p class="text-center">ACTION SYNDICALE AU PETERBOS (vidéo)</p>
                                 <p>par Syndicat des Locataires le 13 juin 2018</p>
@@ -129,8 +131,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 list-item-carte-Article">
-                        <div class="card syn-loc"onclick="document.location.href='http://www.radiopanik.org/emissions/la-voix-de-la-rue/acces-au-logement-et-precarite/'">
+                    <div class="col-12 list-item-carte-Article syn-loc">
+                        <div class="card"onclick="document.location.href='http://www.radiopanik.org/emissions/la-voix-de-la-rue/acces-au-logement-et-precarite/'">
                             <div class="card-header">
                                 <p class="text-center">RADIO PANIK</p>
                                 <p>par Syndicat des Locataires le 12 juin 2018</p>
@@ -146,8 +148,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 list-item-carte-Article">
-                        <div class="card syn-loc action art-pre"onclick="ouvrirModal('PETERBOS')">
+                    <div class="col-12 list-item-carte-Article syn-loc action art-pre">
+                        <div class="card"onclick="ouvrirModal('PETERBOS')">
                             <div class="card-header"> 
                                 <p class="text-center">ACTION DU SL AU PETERBOS</p>
                                 <p>par Syndicat des Locataires le 9 juin 2018</p>
@@ -163,8 +165,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 list-item-carte-Article">
-                        <div class="card phare"onclick="ouvrirModal('PhareN133')">
+                    <div class="col-12 list-item-carte-Article phare">
+                        <div class="card"onclick="ouvrirModal('PhareN133')">
                             <div class="card-header">
                                 <p class="text-center">LE PHARE N° 133</p>
                                 <p>par Syndicat des Locataires le 28 mai 2018</p>
@@ -180,8 +182,8 @@
                         </div>
                     </div>
 
-                    <div class="col-12 list-item-carte-Article">
-                        <div class="card forma">
+                    <div class="col-12 list-item-carte-Article forma">
+                        <div class="card">
                             <div class="card-header"> 
                                 <p class="text-center">COURS DE FORMATION 24 MAI 2018 ORGANISER ET ANIMER UNE RÉUNION COCOLO</p>
                                 <p>par Syndicat des Locataires le 19 mai 2018</p>
@@ -196,8 +198,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 list-item-carte-Article">
-                        <div class="card service"onclick="ouvrirModal('Vous-voulez-nous-contacter')">
+                    <div class="col-12 list-item-carte-Article service">
+                        <div class="card"onclick="ouvrirModal('Vous-voulez-nous-contacter')">
                             <div class="card-header">
                                 <p class="text-center">VOUS VOULEZ NOUS CONTACTER ?</p>
                                 <p>par Syndicat des Locataires le 19 mai 2018</p>
@@ -230,8 +232,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 list-item-carte-Article">
-                            <div class="card action">
+                    <div class="col-12 list-item-carte-Article action">
+                            <div class="card">
                                 <div class="card-header">
                                     <p class="text-center">FÊTE DU SQUARE ALBERT 12 MAI 2018</p>
                                     <p>par Syndicat des Locataires le 5 mai 2018</p>
@@ -246,8 +248,8 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="col-12 list-item-carte-Article">
-                            <div class="card action art-pre syn-loc"onclick="ouvrirModal('les-scientologues-forcent-la-cohabitation')">
+                    <div class="col-12 list-item-carte-Article action art-pre syn-loc">
+                            <div class="card"onclick="ouvrirModal('les-scientologues-forcent-la-cohabitation')">
                                 <div class="card-header">
                                     <p class="text-center">Les scientologues forcent la cohabitation…</p>
                                     <p>par Syndicat des Locataires le 3 mai 2018</p>
@@ -258,8 +260,8 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="col-12 list-item-carte-Article">
-                        <div class="card video"onclick="ouvrirModal('brique-dor-2018-slrb')">
+                    <div class="col-12 list-item-carte-Article video">
+                        <div class="card"onclick="ouvrirModal('brique-dor-2018-slrb')">
                             <div class="card-header">
                                 <p class="text-center">BRIQUE D’OR 2018 SLRB</p>
                                 <p>par Syndicat des Locataires le 28 avril 2018</p>
@@ -269,8 +271,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 list-item-carte-Article">
-                            <div class="card action" onclick="ouvrirModal('locametreWadesda')">
+                    <div class="col-12 list-item-carte-Article action">
+                            <div class="card" onclick="ouvrirModal('locametreWadesda')">
                                 <div class="card-header">
                                     <p class="text-center">Le locamètre, wadesda ?</p>
                                     <p>par Syndicat des Locataires le 14 mars 2018</p>
@@ -286,8 +288,8 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="col-12 list-item-carte-Article">
-                            <div class="card service info">
+                    <div class="col-12 list-item-carte-Article service info">
+                            <div class="card">
                                 <div class="card-header">
                                     <p class="text-center">NOS HORAIRES</p>
                                     <p>par Syndicat des Locataires le 6 mars 2018</p>
@@ -302,8 +304,8 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="col-12 list-item-carte-Article">
-                            <div class="card info">
+                    <div class="col-12 list-item-carte-Article info">
+                            <div class="card">
                                 <div class="card-header">
                                     <p class="text-center">PERMANENCES TÉLÉPHONIQUES JURIDIQUES</p>
                                     <p>par Syndicat des Locataires le 5 mars 2018</p>
@@ -322,8 +324,8 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="col-12 list-item-carte-Article">
-                            <div class="card action">
+                    <div class="col-12 list-item-carte-Article action">
+                            <div class="card">
                                 <div class="card-header">
                                     <p class="text-center">AG LOCAMÈTRE</p>
                                     <p>par Syndicat des Locataires le 10 février 2018</p>
@@ -338,8 +340,8 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="col-12 list-item-carte-Article">
-                            <div class="card art-pre" onclick="ouvrirModal('LaFlandreInstitutionnaliseLesDiscriminationsAuLogement')">
+                    <div class="col-12 list-item-carte-Article art-pre">
+                            <div class="card" onclick="ouvrirModal('LaFlandreInstitutionnaliseLesDiscriminationsAuLogement')">
                                 <div class="card-header">
                                     <p class="text-center">LA FLANDRE INSTITUTIONNALISE LES DISCRIMINATIONS AU LOGEMENT.</p>
                                     <p>par Syndicat des Locataires le 6 février 2018</p>
@@ -354,8 +356,8 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="col-12 list-item-carte-Article">
-                            <div class="card forma">
+                    <div class="col-12 list-item-carte-Article forma">
+                            <div class="card">
                                 <div class="card-header">
                                     <p class="text-center">COURS DE FORMATION CALCUL DU LOYER DANS LES LOGEMENTS SOCIAUX
                                         </p>
@@ -371,8 +373,8 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="col-12 list-item-carte-Article">
-                            <div class="card phare" onclick="ouvrirModal('PhareN132')">
+                    <div class="col-12 list-item-carte-Article phare">
+                            <div class="card" onclick="ouvrirModal('PhareN132')">
                                 <div class="card-header">
                                     <p class="text-center">LE PHARE N°132</p>
                                     <p>par Syndicat des Locataires le 6 janvier 2018</p>
@@ -382,8 +384,8 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="col-12 list-item-carte-Article">
-                            <div class="card info">
+                    <div class="col-12 list-item-carte-Article info">
+                            <div class="card">
                                 <div class="card-header">
                                     <p class="text-center">BONNE ANNEE 2018</p>
                                     <p>par Syndicat des Locataires le 31 décembre 2017</p>
@@ -398,8 +400,8 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="col-12 list-item-carte-Article">
-                            <div class="card info">
+                    <div class="col-12 list-item-carte-Article info">
+                            <div class="card">
                                 <div class="card-header">
                                     <p class="text-center">FÊTES DE FIN D’ANNÉE
                                         </p>
@@ -454,18 +456,10 @@
                 </div>
                 -->
                 </div>
-                <!-- <nav aria-label="myNavigation">
-                    <ul class="pagination">
-                        <li id="previous-page">
-                            <a class="page-link" href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                        </li>
-    
-                        
+                <nav aria-label="myNavigation">
+                    <ul class="pagination">    
                     </ul>
-                </nav> -->
+                </nav>
             </div> 
         </div>
     </section>
@@ -1011,6 +1005,7 @@
 
     <script src="./assent/script.js"></script>
     <script src="./assent/tableau-tri.js"></script>
+    <script src="./assent/pagination.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"crossorigin="anonymous"></script>
 

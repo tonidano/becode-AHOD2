@@ -17,7 +17,7 @@
 .img-responsive{
     width:10%;
 }
-
+section{padding-top: 100px;}
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
