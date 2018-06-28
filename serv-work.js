@@ -31,7 +31,8 @@ var urlsToCache = [
   '/becode-AHOD2/assent/js/script.js',
   '/becode-AHOD2/assent/js/snippet.js',
   '/becode-AHOD2/icon192.png',
-  '/becode-AHOD2/icon512.png'
+  '/becode-AHOD2/icon512.png',
+  '/becode-AHOD2/serv-work.js'
 ];
 self.addEventListener('install', function(e) {
   console.log('[ServiceWorker] Install');
