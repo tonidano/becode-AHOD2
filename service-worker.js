@@ -1,5 +1,5 @@
-var CACHENAME = 'my-site-step-v1';
-var dataCacheName = 'my-site-v1';
+var CACHENAME = 'Syndicat-des-Locataires';
+var dataCacheName = 'Syn-d-Loc';
 var urlsToCache = [
   '/becode-AHOD2/',
   '/becode-AHOD2/index.html',
