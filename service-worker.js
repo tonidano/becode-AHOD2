@@ -1,7 +1,37 @@
 let CACHENAME = 'Syndicat-des-Locataires';
 var dataCacheName = 'Syn-d-Loc';
 var urlsToCache = [
-
+  '/becode-AHOD2/',
+  '/becode-AHOD2/index.html',
+  '/becode-AHOD2/assent/style.css',
+  // '/becode-AHOD2/assent/img/ACTION DU SL AU PETERBOS.png',
+  // '/becode-AHOD2/assent/img/ACTION SYNDICALE AU PETERBOS.png',
+  // '/becode-AHOD2/assent/img/ag-locametre.png',
+  // '/becode-AHOD2/assent/img/bonne-annee-2018.png',
+  // '/becode-AHOD2/assent/img/cours-de-formation-24-mai-2018.png',
+  // '/becode-AHOD2/assent/img/cours-de-formation-calcul-du-loyer-dans-les-logements-sociaux-2.png',
+  // '/becode-AHOD2/assent/img/education.png',
+  // '/becode-AHOD2/assent/img/fete-du-square-albert-12-mai-2018.png',
+  // '/becode-AHOD2/assent/img/fetes-de-fin-dannee.png',
+  // '/becode-AHOD2/assent/img/FWB.png',
+  // '/becode-AHOD2/assent/img/la-flandre-institutionnalise-les-discriminations-au-logement.png',
+  // '/becode-AHOD2/assent/img/Le Phare N°133.png',
+  // '/becode-AHOD2/assent/img/Le Phare N°134.png',
+  // '/becode-AHOD2/assent/img/le-locametre-wadesda.png',
+  // '/becode-AHOD2/assent/img/nos-horaires.png',
+  // '/becode-AHOD2/assent/img/RADIO PANIK.png',
+  // '/becode-AHOD2/assent/img/sandpaper.png',
+  // '/becode-AHOD2/assent/img/video discriminations.png',
+  // '/becode-AHOD2/assent/pdf/Le Phare N°132.pdf',
+  // '/becode-AHOD2/assent/pdf/Le Phare N°133.pdf',
+  // '/becode-AHOD2/assent/pdf/slrb.pdf',
+  // '/becode-AHOD2/assent/pdf/Vous-voulez-nous-contacter.pdf',
+  // '/becode-AHOD2/assent/vedeo/BRIQUE D’OR 2018 SLRB.mp4',
+  // '/becode-AHOD2/assent/js/pagination.js',
+  // '/becode-AHOD2/assent/js/script.js',
+  // '/becode-AHOD2/assent/js/snippet.js',
+  '/becode-AHOD2/icon192.png',
+  '/becode-AHOD2/icon512.png'
 ];
 self.addEventListener('install', function(e) {
   console.log('[ServiceWorker] Install');
