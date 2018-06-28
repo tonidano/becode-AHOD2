@@ -3,9 +3,9 @@ var dataCacheName = 'Syn-d-Loc';
 var urlsToCache = [
   '/becode-AHOD2/',
   '/becode-AHOD2/index.html',
-  '/becode-AHOD2/assent/style.css'
-  //,
-  // '/becode-AHOD2/assent/img/ACTION DU SL AU PETERBOS.png',
+  '/becode-AHOD2/assent/style.css',
+  '/becode-AHOD2/assent/img/ACTION DU SL AU PETERBOS.png'
+  // ,
   // '/becode-AHOD2/assent/img/ACTION SYNDICALE AU PETERBOS.png',
   // '/becode-AHOD2/assent/img/ag-locametre.png',
   // '/becode-AHOD2/assent/img/bonne-annee-2018.png',
