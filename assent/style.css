@@ -294,7 +294,7 @@ footer{
     display: block;
   }
   /* Style the buttons */
-  #nav-collapse1 .btn {
+  #contenaiBPN .btn{
     border: none;
     outline: none;
     padding: 12px 16px;
@@ -302,11 +302,11 @@ footer{
     cursor: pointer;
   }
   
-  #nav-collapse1 .btn:hover {
+  #contenaiBPN .btn:hover{
     background-color: #ddd;
   }
   
-  #nav-collapse1 .btn.active {
+  #contenaiBPN .btn.active{
     background-color: #666;
     color: white;
   }

@@ -27,22 +27,7 @@
                 <div id="NavbarGen">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                Articles de presse
-                            </a>
-                            <div class="dropdown-menu" id="NavbarGen-contenaiBPN">
-                                <a class="btn active" onclick="filterSelection('all',0)"id="all">Articles De Presse</a><br>
-                                <a class="btn" onclick="filterSelection('action',0)" id="action">Action</a><br>
-                                <a class="btn" onclick="filterSelection('forma',0)"id="forma">Cours De Formation</a><br>
-                                <a class="btn" onclick="filterSelection('com-pre',0)"id="com-pre">Communiqués De Presse</a><br>
-                                <a class="btn" onclick="filterSelection('phare',0)"id="phare">Le Phare</a><br>
-                                <a class="btn" onclick="filterSelection('syn-loc',0)"id="syn-loc">Syndicat des locataires</a><br>
-                                <a class="btn" onclick="filterSelection('service',0)"id="service">Nos services</a><br>
-                                <a class="btn" onclick="filterSelection('video',0)"id="video">Vidéo du Syndicat des locataires</a><br>
-                                <a class="btn" onclick="filterSelection('info',0)"id="info">Info Pratiques</a>         
-                            </div>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#TabArticle">Articles de presse</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Nos horaires</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Nos Partenaires</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Vidéo</a></li>
@@ -60,21 +45,10 @@
                             <div class="dropdown-menu text-right">
                                 <a class="nav-link" href="#">Home</a>
                                 
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                        <a class="nav-link " href="#TabArticle">
                                             Articles de presse
                                         </a>
-                                        <div class="dropdown-menu text-right contenaiBPN">
-                                            <a class="btn active" onclick="filterSelection('all',0)"id="all">Articles De Presse</a><br>
-                                            <a class="btn" onclick="filterSelection('action',0)" id="action">Action</a><br>
-                                            <a class="btn" onclick="filterSelection('art-pre',0)" id="art-pre">Articles De Presse</a><br>
-                                            <a class="btn" onclick="filterSelection('forma',0)"id="forma">Cours De Formation</a><br>
-                                            <a class="btn" onclick="filterSelection('com-pre',0)"id="com-pre">Communiqués De Presse</a><br>
-                                            <a class="btn" onclick="filterSelection('phare',0)"id="phare">Le Phare</a><br>
-                                            <a class="btn" onclick="filterSelection('syn-loc',0)"id="syn-loc">Syndicat des locataires</a><br>
-                                            <a class="btn" onclick="filterSelection('service',0)"id="service">Nos services</a><br>
-                                            <a class="btn" onclick="filterSelection('video',0)"id="video">Vidéo du Syndicat des locataires</a><br>
-                                            <a class="btn" onclick="filterSelection('info',0)"id="info">Info Pratiques</a><br>         
-                                        </div>
+                                        
                                     <a class="nav-link" href="#">Nos horaires</a>
                                     <a class="nav-link" href="#">Nos Partenaires</a>
                                     <a class="nav-link" href="#">Vidéo</a>
@@ -192,6 +166,20 @@
             </div>
             <div class="col-8">
                 <div class="row mx-auto d-flex" id="TabArticle">
+                    <div class="col-12"id="contenaiBPN">
+                        <button class="btn active" onclick="filterSelection('all',0)"id="all">Articles De Presse</button>
+                        <button class="btn" onclick="filterSelection('action',0)" id="action">Action</button>
+                        <button class="btn" onclick="filterSelection('art-pre',0)" id="art-pre">Articles De Presse</button>
+                        <button class="btn" onclick="filterSelection('forma',0)"id="forma">Cours De Formation</button>
+                        <button class="btn" onclick="filterSelection('com-pre',0)"id="com-pre">Communiqués De Presse</button>       
+                        <button class="btn" onclick="filterSelection('phare',0)"id="phare">Le Phare</button>
+                        <button class="btn" onclick="filterSelection('syn-loc',0)"id="syn-loc">Syndicat des locataires</button>
+                        <button class="btn" onclick="filterSelection('service',0)"id="service">Nos services</button>
+                        <button class="btn" onclick="filterSelection('video',0)"id="video">Vidéo du Syndicat des locataires</button>
+                        <button class="btn" onclick="filterSelection('info',0)"id="info">Info Pratiques</button>
+      
+                                
+                    </div>
                     <div class="col-12 list-item-carte-Article syn-loc phare">
                             <div class="card "onclick="document.location.href='https://www.dropbox.com/s/jmk8bztoyh20oke/PHARE%20134.pdf?dl=0'">
                                 <div class="card-header">
