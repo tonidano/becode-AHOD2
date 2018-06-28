@@ -1,4 +1,4 @@
-var CACHENAME = 'Syndicat-des-Locataires';
+let CACHENAME = 'Syndicat-des-Locataires';
 var dataCacheName = 'Syn-d-Loc';
 var urlsToCache = [
   '/becode-AHOD2/',
