@@ -6,8 +6,14 @@ let memoArticle;
 
 //var totalPages = Math.round(numberOfArticle / limiteitem);
 let y
-let btnContainer = document.getElementById("nav-collapse1");
-let btns = btnContainer.getElementsByClassName("btn");
+let btnContainer ;
+let btns;
+console.log($( window ).width());
+btnContainer = document.getElementById("NavbarGen-contenaiBPN");
+console.log(btnContainer);
+        btns = btns.getElementsByClassName("btn");
+        console.log(btns); 
+
 filterSelection("all",0);
 
 function filterSelection(c,demareArticle) {
@@ -34,7 +40,9 @@ function filterSelection(c,demareArticle) {
 
 		$(document).ready(function()
 			{
-
+        console.log(window);
+        btnContainer = document.getElementById("NavbarMobil");
+        btns = btnContainer.getElementsByClassName("btn");
 				var numberOfArticle = nbART.length;
 
 				var totalPages = Math.round(numberOfArticle / limiteitem);

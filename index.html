@@ -11,12 +11,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assent/style.css">
-    <link rel="stylesheet" href="./assent/tableau-tri.css">
     
     
         <!-- Bootstrap CSS  -->
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+		<!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> -->
 		
     <!-- <link rel="manifest" href="./manifest.json"> -->
     <!-- <link rel="stylesheet" type="text/css" src="assets.css"> -->
@@ -24,50 +23,71 @@
   <body>
     <header>
 		<div class="jumbotron jumbotron-fluid">
-					<!-- Second navbar for categories -->
-			<nav class=".navbar navbar-expand-sm ">
-				<div class="container">
-							<!-- Brand and toggle get grouped for better mobile display -->
-							<div class="navbar-header">
-                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
-                                            <i class="fa fa-bars"></i>
-                                    </button>
-                                    <a class="navbar-brand" href="#"><img src="https://syndicatdeslocataires.files.wordpress.com/2018/06/logo-sl-rouge-pour-calque-petit.png" alt="logo" 
-                                        style="
-                                        width:25%;
-                                        margin-top:-20px;
-                                        
-                                        "></a>
-                                </div>
-                        
-                                <!-- Collect the nav links, forms, and other content for toggling -->
-                                <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                                    <ul class="nav navbar-nav navbar-right">
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#">Articles de presse</a></li>
-                                        <li><a href="#">Nos horaires</a></li>
-                                        <li><a href="#">Nos Partenaires</a></li>
-                                        <li><a href="#">Notre Adresse</a></li>
-                                        <li><a href="#">Contact</a></li>
-                                        <li><a class="btn btn-default btn-outline btn-circle"  data-toggle="collapse" href="#nav-collapse1" aria-expanded="false" aria-controls="nav-collapse1" style="margin-top:0px;">Categories</a>
-                </li>
-                      </ul>
-                                <ul class="collapse nav navbar-nav nav-collapse" id="nav-collapse1">
-                                    <li class="btn" onclick="filterSelection('action',0)" id="action"><a>Action</a></li>
-                                    <li class="btn" onclick="filterSelection('art-pre',0)" id="art-pre"><a>Articles De Presse</a></li>
-                                    <li class="btn" onclick="filterSelection('forma',0)"id="forma"><a>Cours De Formation</a></li>
-                                    <li class="btn" onclick="filterSelection('com-pre',0)"id="com-pre"><a>Communiqués De Presse</a></li>
-                                    <li class="btn" onclick="filterSelection('phare',0)"id="phare"><a>Le Phare</a></li>
-                                    <li class="btn" onclick="filterSelection('syn-loc',0)"id="syn-loc"><a>Syndicat des locataires</a></li>
-                                    <li class="btn" onclick="filterSelection('service',0)"id="service"><a>Nos services</a></li>
-                                    <li class="btn" onclick="filterSelection('video',0)"id="video"><a>Vidéo du Syndicat des locataires</a></li>
-                                    <li class="btn" onclick="filterSelection('info',0)"id="info"><a>Info Pratiques</a></li>
-                                    <li class="btn active" onclick="filterSelection('all',0)"id="all"><a>Aucune Catégorie</a></li>
-                                </ul>
-							</div><!-- /.navbar-collapse -->
-						</div><!-- /.container -->
-                    </nav><!-- /.navbar -->
+            <nav class=".navbar navbar-expand-sm bg-dark navbar-dark">
+                <div id="NavbarGen">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                Articles de presse
+                            </a>
+                            <div class="dropdown-menu" id="NavbarGen-contenaiBPN">
+                                <a class="btn active" onclick="filterSelection('all',0)"id="all">Articles De Presse</a><br>
+                                <a class="btn" onclick="filterSelection('action',0)" id="action">Action</a><br>
+                                <a class="btn" onclick="filterSelection('forma',0)"id="forma">Cours De Formation</a><br>
+                                <a class="btn" onclick="filterSelection('com-pre',0)"id="com-pre">Communiqués De Presse</a><br>
+                                <a class="btn" onclick="filterSelection('phare',0)"id="phare">Le Phare</a><br>
+                                <a class="btn" onclick="filterSelection('syn-loc',0)"id="syn-loc">Syndicat des locataires</a><br>
+                                <a class="btn" onclick="filterSelection('service',0)"id="service">Nos services</a><br>
+                                <a class="btn" onclick="filterSelection('video',0)"id="video">Vidéo du Syndicat des locataires</a><br>
+                                <a class="btn" onclick="filterSelection('info',0)"id="info">Info Pratiques</a>         
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Nos horaires</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Nos Partenaires</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Vidéo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Notre Adresse</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Qui sommes nous ?</a></li>                            
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>    
+                    </ul>
                 </div>
+                <div class="mx-auto text-center" id="NavbarMobil">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                            <div class="dropdown-menu text-right">
+                                <a class="nav-link" href="#">Home</a>
+                                
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                            Articles de presse
+                                        </a>
+                                        <div class="dropdown-menu text-right contenaiBPN">
+                                            <a class="btn active" onclick="filterSelection('all',0)"id="all">Articles De Presse</a><br>
+                                            <a class="btn" onclick="filterSelection('action',0)" id="action">Action</a><br>
+                                            <a class="btn" onclick="filterSelection('art-pre',0)" id="art-pre">Articles De Presse</a><br>
+                                            <a class="btn" onclick="filterSelection('forma',0)"id="forma">Cours De Formation</a><br>
+                                            <a class="btn" onclick="filterSelection('com-pre',0)"id="com-pre">Communiqués De Presse</a><br>
+                                            <a class="btn" onclick="filterSelection('phare',0)"id="phare">Le Phare</a><br>
+                                            <a class="btn" onclick="filterSelection('syn-loc',0)"id="syn-loc">Syndicat des locataires</a><br>
+                                            <a class="btn" onclick="filterSelection('service',0)"id="service">Nos services</a><br>
+                                            <a class="btn" onclick="filterSelection('video',0)"id="video">Vidéo du Syndicat des locataires</a><br>
+                                            <a class="btn" onclick="filterSelection('info',0)"id="info">Info Pratiques</a><br>         
+                                        </div>
+                                    <a class="nav-link" href="#">Nos horaires</a>
+                                    <a class="nav-link" href="#">Nos Partenaires</a>
+                                    <a class="nav-link" href="#">Vidéo</a>
+                                    <a class="nav-link" href="#">Notre Adresse</a>
+                                    <a class="nav-link" href="#">Qui sommes nous ?</a>                                          
+                                    <a class="nav-link" href="#">Contact</a> 
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </nav>
+        </div>
     </header>
     <section>
         <div class="row">
