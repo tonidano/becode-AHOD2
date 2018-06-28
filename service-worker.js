@@ -10,7 +10,7 @@ var urlsToCache = [
   '/becode-AHOD2/assent/img/bonne-annee-2018.png',
   '/becode-AHOD2/assent/img/cours-de-formation-24-mai-2018.png',
   '/becode-AHOD2/assent/img/cours-de-formation-calcul-du-loyer-dans-les-logements-sociaux-2.png',
-  '/becode-AHOD2/assent/img/education.png',
+  '/becode-AHOD2/assent/img/education.jpg',
   '/becode-AHOD2/assent/img/fete-du-square-albert-12-mai-2018.png',
   '/becode-AHOD2/assent/img/fetes-de-fin-dannee.png'
   // ,
