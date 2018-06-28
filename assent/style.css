@@ -1,6 +1,6 @@
 .jumbotron {
   background: linear-gradient(#ffffff 50%, rgba(255, 255, 255, 0) 0) 0 0, radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255, 255, 255, 0) 0) 0 0, radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255, 255, 255, 0) 0) 55px 0 #48B;
-  background-size: 110px 200px;
+  background-size: 110px 300px;
   background-repeat: repeat-x;
   background-color: #23aadb !important;
   padding: 0px !important;
@@ -9,16 +9,15 @@
 #site-title, #site-description {
   color: #04648d;
   font-family: "Fondamento", cursive;
+  margin-top: 0px;
 }
 
 .titres {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  margin-top: 0px;
-  /* margin: 0 0 5px; */
-  position: relative;
   width: 75%;
+  padding-top: 20px;
 }
 
 .logo img {
@@ -96,9 +95,14 @@
 
 section {
   padding-top: 100px;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
-/* The Modal (background) */
+.asides {
+  padding-top: 0px !important;
+}
 
 .modal {
   display: none;
@@ -213,10 +217,10 @@ button:hover, .button-F:hover {
 body {
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
-}
-
-section {
-  width: 100%;
+  background-image: url("./img/sandpaper.png");
+  background-color: #e68a00 !important;
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  /* The Modal (background) */
 }
 
 /* Full-width input fields */
@@ -337,6 +341,10 @@ footer {
 
 /*
 */
+
+#TabArticle .card-header {
+  background-color: #23aadb !important;
+}
 
 #PETERBOS, #brique-dor-2018-slrb, #PhareN133, #Vous-voulez-nous-contacter, #les-scientologues-forcent-la-cohabitation, #locametreWadesda, #LaFlandreInstitutionnaliseLesDiscriminationsAuLogement, #PhareN132 {
   display: none;
