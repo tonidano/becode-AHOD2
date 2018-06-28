@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assent/style.css">
-    
+    <link href="https://fonts.googleapis.com/css?family=Fondamento" rel="stylesheet">
     
         <!-- Bootstrap CSS  -->
 		<!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -21,51 +21,62 @@
     <!-- <link rel="stylesheet" type="text/css" src="assets.css"> -->
   </head>
   <body>
-    <header>
-		<div class="jumbotron jumbotron-fluid">
-            <nav class=".navbar navbar-expand-sm bg-dark navbar-dark">
-                <div id="NavbarGen">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#TabArticle">Articles de presse</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Nos horaires</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Nos Partenaires</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Vidéo</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Notre Adresse</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Qui sommes nous ?</a></li>                            
-                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>    
-                    </ul>
+        <header>
+                <div class="jumbotron jumbotron-fluid">
+                  <div class="logo">
+                    <img src="https://syndicatdeslocataires.files.wordpress.com/2018/06/logo-sl-rouge-pour-calque-petit.png" alt="logo">
+                  </div>
+                  <div class="titres">
+                    <h1 id="site-title">Syndicat des Locataires</h1>
+                    <p id="site-description">LE DROIT À L'HABITAT POUR TOUS C'EST POSSIBLE ICI ET MAINTENANT</p>
+                  </div>
+            
+                  <!-- Second navbar for categories -->
+                 
+                  <!-- /.navbar -->
                 </div>
-                <div class="mx-auto text-center" id="NavbarMobil">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                <i class="fa fa-bars"></i>
-                            </a>
-                            <div class="dropdown-menu text-right">
-                                <a class="nav-link" href="#">Home</a>
-                                
-                                        <a class="nav-link " href="#TabArticle">
-                                            Articles de presse
-                                        </a>
+                <nav class=".navbar navbar-expand-sm bg-dark navbar-dark">
+                        <div id="NavbarGen">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#TabArticle">Articles de presse</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Nos horaires</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Nos Partenaires</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Vidéo</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Notre Adresse</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Qui sommes nous ?</a></li>                            
+                                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>    
+                            </ul>
+                        </div>
+                        <div class="mx-auto text-center" id="NavbarMobil">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                        <i class="fa fa-bars"></i>
+                                    </a>
+                                    <div class="dropdown-menu text-right">
+                                        <a class="nav-link" href="#">Home</a>
                                         
-                                    <a class="nav-link" href="#">Nos horaires</a>
-                                    <a class="nav-link" href="#">Nos Partenaires</a>
-                                    <a class="nav-link" href="#">Vidéo</a>
-                                    <a class="nav-link" href="#">Notre Adresse</a>
-                                    <a class="nav-link" href="#">Qui sommes nous ?</a>                                          
-                                    <a class="nav-link" href="#">Contact</a> 
-                                
-                            </div>
-                        </li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </nav>
-        </div>
-    </header>
+                                                <a class="nav-link " href="#TabArticle">
+                                                    Articles de presse
+                                                </a>
+                                                
+                                            <a class="nav-link" href="#">Nos horaires</a>
+                                            <a class="nav-link" href="#">Nos Partenaires</a>
+                                            <a class="nav-link" href="#">Vidéo</a>
+                                            <a class="nav-link" href="#">Notre Adresse</a>
+                                            <a class="nav-link" href="#">Qui sommes nous ?</a>                                          
+                                            <a class="nav-link" href="#">Contact</a> 
+                                        
+                                    </div>
+                                </li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </nav>
+              </header>
     <section>
         <div class="row">
-            <div class="col-md-4 col-xs-4">
+            <div class="col-md-4 col-xs-4  asides">
                 <div class="card">
                     <div class="card-header bg-danger">Nos horaires</div>
               
@@ -281,258 +292,242 @@
                         </div>
                     </div>
 
-                    <div class="col-12 list-item-carte-Article forma">
-                        <div class="card">
-                            <div class="card-header"> 
-                                <p class="text-center">COURS DE FORMATION 24 MAI 2018 ORGANISER ET ANIMER UNE RÉUNION COCOLO</p>
-                                <p>par Syndicat des Locataires le 19 mai 2018</p>
-                            </div>
-                            <div class="row">
-                                    <div class="col-6 offset-3">
-                                        <img class="card-img-top" src="./assent/img/cours-de-formation-24-mai-2018.png" alt="Card image cap">
-                                    </div>
-                                </div>
-                            <div class="card-body">
-                                <p>Publié dans: COURS DE FORMATION</p> 	        
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 list-item-carte-Article service">
-                        <div class="card"onclick="ouvrirModal('Vous-voulez-nous-contacter')">
-                            <div class="card-header">
-                                <p class="text-center">VOUS VOULEZ NOUS CONTACTER ?</p>
-                                <p>par Syndicat des Locataires le 19 mai 2018</p>
-                            </div>
-                            <div class="row">
-                                    <div class="col-6 offset-3">
-                                        <p class="text-center">
-                                            PLUS D’INFORMATIONS ? <br>
+          <div class="col-12 list-item-carte-Article forma">
+            <div class="card">
+              <div class="card-header">
+                <p class="text-center">COURS DE FORMATION 24 MAI 2018 ORGANISER ET ANIMER UNE RÉUNION COCOLO</p>
+                <p>par Syndicat des Locataires le 19 mai 2018</p>
+              </div>
+              <div class="row">
+                <div class="col-6 offset-3">
+                  <img class="card-img-top" src="./assent/img/cours-de-formation-24-mai-2018.png" alt="Card image cap">
+                </div>
+              </div>
+              <div class="card-body">
+                <p>Publié dans: COURS DE FORMATION</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 list-item-carte-Article service">
+            <div class="card" onclick="ouvrirModal('Vous-voulez-nous-contacter')">
+              <div class="card-header">
+                <p class="text-center">VOUS VOULEZ NOUS CONTACTER ?</p>
+                <p>par Syndicat des Locataires le 19 mai 2018</p>
+              </div>
+              <div class="row">
+                <div class="col-6 offset-3">
+                  <p class="text-center">
+                    PLUS D’INFORMATIONS ? <br> VOUS VOULEZ NOUS CONTACTER, CLIQUEZ ICI<br> MEER INFORMATIE<br> MORE INFORMATION<br> MÁS INFORMACIÓN<br> PLI INFORMOJ<br> 詳細情報
 
-                                            VOUS VOULEZ NOUS CONTACTER, CLIQUEZ ICI<br>
-                                            
-                                            MEER INFORMATIE<br>
-                                            
-                                            MORE INFORMATION<br>
-                                            
-                                            MÁS INFORMACIÓN<br>
-                                            
-                                            PLI INFORMOJ<br>
-                                            
-                                            詳細情報<br>
-                                            
-                                            Дополнительная информация<br>
-                                            
-                                            معلومات أخرىDaha fazla bilgi<br>
-                                        </p>                                        
-                                    </div>
-                                </div>
-                            <div class="card-body">
-                                <p>Publié dans: NOS SERVICES</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 list-item-carte-Article action">
-                            <div class="card">
-                                <div class="card-header">
-                                    <p class="text-center">FÊTE DU SQUARE ALBERT 12 MAI 2018</p>
-                                    <p>par Syndicat des Locataires le 5 mai 2018</p>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6 offset-3">
-                                        <img class="card-img-top" src="./assent/img/fete-du-square-albert-12-mai-2018.png" alt="Card image cap" >
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <p>Publié dans: ACTIONS, PCS SQUARE ALBERT 1er</p>             
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col-12 list-item-carte-Article action art-pre syn-loc">
-                            <div class="card"onclick="ouvrirModal('les-scientologues-forcent-la-cohabitation')">
-                                <div class="card-header">
-                                    <p class="text-center">Les scientologues forcent la cohabitation…</p>
-                                    <p>par Syndicat des Locataires le 3 mai 2018</p>
-                                </div>    
-                                <div class="card-body">
-                                    <p>Publié dans: ACTIONS, ARTICLES DE PRESSE, SYNDICAT DES LOCATAIRES</p>
-                                    <p>Tagué:HUURDERSBOND, SYNDICAT DES LOCATAIRES</p>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col-12 list-item-carte-Article video">
-                        <div class="card"onclick="ouvrirModal('brique-dor-2018-slrb')">
-                            <div class="card-header">
-                                <p class="text-center">BRIQUE D’OR 2018 SLRB</p>
-                                <p>par Syndicat des Locataires le 28 avril 2018</p>
-                            </div>    
-                            <div class="card-body">
-                                <p>Publié dans: CONVENTION COLLECTIVE DE L'HABITAT, VIDÉOS DU SYNDICAT DES LOCATAIRES</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 list-item-carte-Article action">
-                            <div class="card" onclick="ouvrirModal('locametreWadesda')">
-                                <div class="card-header">
-                                    <p class="text-center">Le locamètre, wadesda ?</p>
-                                    <p>par Syndicat des Locataires le 14 mars 2018</p>
-                                </div>
-                                <div class="row">
-                                        <div class="col-6 offset-3">
-                                            <img class="card-img-top" src="./assent/img/le-locametre-wadesda.png" alt="le locametre wadesda">
-                                        </div>
-                                    </div>    
-                                <div class="card-body">
-                                        <p>Publié dans: ACTIONS, ARTICLES EN NÉERLANDAIS, LOCAMÈTRE	</p>
-                                        <p>Tagué:HUURDERSBOND, LOCAMÈTRE, SYNDICAT DES LOCATAIRES</p>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col-12 list-item-carte-Article service info">
-                            <div class="card">
-                                <div class="card-header">
-                                    <p class="text-center">NOS HORAIRES</p>
-                                    <p>par Syndicat des Locataires le 6 mars 2018</p>
-                                </div>
-                                <div class="row">
-                                        <div class="col-6 offset-3">
-                                            <img class="card-img-top" src="./assent/img/nos-horaires.png" alt="nos horaires">
-                                        </div>
-                                    </div>    
-                                <div class="card-body">
-                                        <p>Publié dans: INFOS PRATIQUES, NOS SERVICES</p>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col-12 list-item-carte-Article info">
-                            <div class="card">
-                                <div class="card-header">
-                                    <p class="text-center">PERMANENCES TÉLÉPHONIQUES JURIDIQUES</p>
-                                    <p>par Syndicat des Locataires le 5 mars 2018</p>
-                                </div>
-                                <div >
-                                    <br>
-                                        <p class=" text-center colorBLUE">PERMANENCES TÉLÉPHONIQUES JURIDIQUES 
-<br><br>
-                                                LUNDI,MARDI,MERCREDI ET JEUDI
-                                                <br><br>
-                                                de 14H à 17H</p>
-                                                <h3 class=" text-center colorBLUE">02/522 98 69</h3>
-                                    </div>    
-                                <div class="card-body">
-                                        <p>Publié dans: INFOS PRATIQUES</p>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col-12 list-item-carte-Article action">
-                            <div class="card">
-                                <div class="card-header">
-                                    <p class="text-center">AG LOCAMÈTRE</p>
-                                    <p>par Syndicat des Locataires le 10 février 2018</p>
-                                </div>
-                                <div class="row">
-                                        <div class="col-6 offset-3">
-                                            <img class="card-img-top" src="./assent/img/ag-locametre.png" alt="nos horaires">
-                                        </div>
-                                    </div>    
-                                <div class="card-body">
-                                        <p>Publié dans: ACTIONS, LOCAMÈTRE</p>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col-12 list-item-carte-Article art-pre">
-                            <div class="card" onclick="ouvrirModal('LaFlandreInstitutionnaliseLesDiscriminationsAuLogement')">
-                                <div class="card-header">
-                                    <p class="text-center">LA FLANDRE INSTITUTIONNALISE LES DISCRIMINATIONS AU LOGEMENT.</p>
-                                    <p>par Syndicat des Locataires le 6 février 2018</p>
-                                </div>
-                                <div class="row">
-                                        <div class="col-6 offset-3">
-                                            <img class="card-img-top" src="./assent/img/la-flandre-institutionnalise-les-discriminations-au-logement.png" alt="le locametre wadesda">
-                                        </div>
-                                    </div>    
-                                <div class="card-body">
-                                        <p>Publié dans: ARTICLES DE PRESSE</p>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col-12 list-item-carte-Article forma">
-                            <div class="card">
-                                <div class="card-header">
-                                    <p class="text-center">COURS DE FORMATION CALCUL DU LOYER DANS LES LOGEMENTS SOCIAUX
-                                        </p>
-                                    <p>par Syndicat des Locataires le 15 janvier 2018</p>
-                                </div>
-                                <div class="row">
-                                        <div class="col-6 offset-3">
-                                            <img class="card-img-top" src="./assent/img/cours-de-formation-calcul-du-loyer-dans-les-logements-sociaux-2.png" alt="le locametre wadesda">
-                                        </div>
-                                    </div>    
-                                <div class="card-body">
-                                        <p>Publié dans: COURS DE FORMATION</p>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col-12 list-item-carte-Article phare">
-                            <div class="card" onclick="ouvrirModal('PhareN132')">
-                                <div class="card-header">
-                                    <p class="text-center">LE PHARE N°132</p>
-                                    <p>par Syndicat des Locataires le 6 janvier 2018</p>
-                                </div>
-                                <div class="card-body">
-                                        <p>Publié dans: LE PHARE</p>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col-12 list-item-carte-Article info">
-                            <div class="card">
-                                <div class="card-header">
-                                    <p class="text-center">BONNE ANNEE 2018</p>
-                                    <p>par Syndicat des Locataires le 31 décembre 2017</p>
-                                </div>
-                                <div class="row">
-                                        <div class="col-6 offset-3">
-                                            <img class="card-img-top" src="./assent/img/bonne-annee-2018.png" alt="le locametre wadesda">
-                                        </div>
-                                    </div>    
-                                <div class="card-body">
-                                        <p>Publié dans: INFOS PRATIQUES</p>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col-12 list-item-carte-Article info">
-                            <div class="card">
-                                <div class="card-header">
-                                    <p class="text-center">FÊTES DE FIN D’ANNÉE
-                                        </p>
-                                    <p>par Syndicat des Locataires le 26 décembre 2017</p>
-                                </div>
-                                <div class="row">
-                                        <div class="col-6 offset-3">
-                                            <img class="card-img-top" src="./assent/img/fetes-de-fin-dannee.png" alt="le locametre wadesda">
-                                        </div>
-                                    </div>    
-                                <div class="card-body">
-                                        <p>Publié dans: INFOS PRATIQUES</p>
-                                </div>
-                            </div>
-                    </div>
-                    <!-- 
-                        
+                    <br> Дополнительная информация<br> معلومات أخرىDaha fazla bilgi<br>
+                  </p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>Publié dans: NOS SERVICES</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 list-item-carte-Article action">
+            <div class="card">
+              <div class="card-header">
+                <p class="text-center">FÊTE DU SQUARE ALBERT 12 MAI 2018</p>
+                <p>par Syndicat des Locataires le 5 mai 2018</p>
+              </div>
+              <div class="row">
+                <div class="col-6 offset-3">
+                  <img class="card-img-top" src="./assent/img/fete-du-square-albert-12-mai-2018.png" alt="Card image cap">
+                </div>
+              </div>
+              <div class="card-body">
+                <p>Publié dans: ACTIONS, PCS SQUARE ALBERT 1er</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 list-item-carte-Article action art-pre syn-loc">
+            <div class="card" onclick="ouvrirModal('les-scientologues-forcent-la-cohabitation')">
+              <div class="card-header">
+                <p class="text-center">Les scientologues forcent la cohabitation…</p>
+                <p>par Syndicat des Locataires le 3 mai 2018</p>
+              </div>
+              <div class="card-body">
+                <p>Publié dans: ACTIONS, ARTICLES DE PRESSE, SYNDICAT DES LOCATAIRES</p>
+                <p>Tagué:HUURDERSBOND, SYNDICAT DES LOCATAIRES</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 list-item-carte-Article video">
+            <div class="card" onclick="ouvrirModal('brique-dor-2018-slrb')">
+              <div class="card-header">
+                <p class="text-center">BRIQUE D’OR 2018 SLRB</p>
+                <p>par Syndicat des Locataires le 28 avril 2018</p>
+              </div>
+              <div class="card-body">
+                <p>Publié dans: CONVENTION COLLECTIVE DE L'HABITAT, VIDÉOS DU SYNDICAT DES LOCATAIRES</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 list-item-carte-Article action">
+            <div class="card" onclick="ouvrirModal('locametreWadesda')">
+              <div class="card-header">
+                <p class="text-center">Le locamètre, wadesda ?</p>
+                <p>par Syndicat des Locataires le 14 mars 2018</p>
+              </div>
+              <div class="row">
+                <div class="col-6 offset-3">
+                  <img class="card-img-top" src="./assent/img/le-locametre-wadesda.png" alt="le locametre wadesda">
+                </div>
+              </div>
+              <div class="card-body">
+                <p>Publié dans: ACTIONS, ARTICLES EN NÉERLANDAIS, LOCAMÈTRE </p>
+                <p>Tagué:HUURDERSBOND, LOCAMÈTRE, SYNDICAT DES LOCATAIRES</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 list-item-carte-Article service info">
+            <div class="card">
+              <div class="card-header">
+                <p class="text-center">NOS HORAIRES</p>
+                <p>par Syndicat des Locataires le 6 mars 2018</p>
+              </div>
+              <div class="row">
+                <div class="col-6 offset-3">
+                  <img class="card-img-top" src="./assent/img/nos-horaires.png" alt="nos horaires">
+                </div>
+              </div>
+              <div class="card-body">
+                <p>Publié dans: INFOS PRATIQUES, NOS SERVICES</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 list-item-carte-Article info">
+            <div class="card">
+              <div class="card-header">
+                <p class="text-center">PERMANENCES TÉLÉPHONIQUES JURIDIQUES</p>
+                <p>par Syndicat des Locataires le 5 mars 2018</p>
+              </div>
+              <div>
+                <br>
+                <p class=" text-center colorBLUE">PERMANENCES TÉLÉPHONIQUES JURIDIQUES
+                  <br><br> LUNDI,MARDI,MERCREDI ET JEUDI
+                  <br><br> de 14H à 17H</p>
+                <h3 class=" text-center colorBLUE">02/522 98 69</h3>
+              </div>
+              <div class="card-body">
+                <p>Publié dans: INFOS PRATIQUES</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 list-item-carte-Article action">
+            <div class="card">
+              <div class="card-header">
+                <p class="text-center">AG LOCAMÈTRE</p>
+                <p>par Syndicat des Locataires le 10 février 2018</p>
+              </div>
+              <div class="row">
+                <div class="col-6 offset-3">
+                  <img class="card-img-top" src="./assent/img/ag-locametre.png" alt="nos horaires">
+                </div>
+              </div>
+              <div class="card-body">
+                <p>Publié dans: ACTIONS, LOCAMÈTRE</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 list-item-carte-Article art-pre">
+            <div class="card" onclick="ouvrirModal('LaFlandreInstitutionnaliseLesDiscriminationsAuLogement')">
+              <div class="card-header">
+                <p class="text-center">LA FLANDRE INSTITUTIONNALISE LES DISCRIMINATIONS AU LOGEMENT.</p>
+                <p>par Syndicat des Locataires le 6 février 2018</p>
+              </div>
+              <div class="row">
+                <div class="col-6 offset-3">
+                  <img class="card-img-top" src="./assent/img/la-flandre-institutionnalise-les-discriminations-au-logement.png" alt="le locametre wadesda">
+                </div>
+              </div>
+              <div class="card-body">
+                <p>Publié dans: ARTICLES DE PRESSE</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 list-item-carte-Article forma">
+            <div class="card">
+              <div class="card-header">
+                <p class="text-center">COURS DE FORMATION CALCUL DU LOYER DANS LES LOGEMENTS SOCIAUX
+                </p>
+                <p>par Syndicat des Locataires le 15 janvier 2018</p>
+              </div>
+              <div class="row">
+                <div class="col-6 offset-3">
+                  <img class="card-img-top" src="./assent/img/cours-de-formation-calcul-du-loyer-dans-les-logements-sociaux-2.png" alt="le locametre wadesda">
+                </div>
+              </div>
+              <div class="card-body">
+                <p>Publié dans: COURS DE FORMATION</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 list-item-carte-Article phare">
+            <div class="card" onclick="ouvrirModal('PhareN132')">
+              <div class="card-header">
+                <p class="text-center">LE PHARE N°132</p>
+                <p>par Syndicat des Locataires le 6 janvier 2018</p>
+              </div>
+              <div class="card-body">
+                <p>Publié dans: LE PHARE</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 list-item-carte-Article info">
+            <div class="card">
+              <div class="card-header">
+                <p class="text-center">BONNE ANNEE 2018</p>
+                <p>par Syndicat des Locataires le 31 décembre 2017</p>
+              </div>
+              <div class="row">
+                <div class="col-6 offset-3">
+                  <img class="card-img-top" src="./assent/img/bonne-annee-2018.png" alt="le locametre wadesda">
+                </div>
+              </div>
+              <div class="card-body">
+                <p>Publié dans: INFOS PRATIQUES</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 list-item-carte-Article info">
+            <div class="card">
+              <div class="card-header">
+                <p class="text-center">FÊTES DE FIN D’ANNÉE
+                </p>
+                <p>par Syndicat des Locataires le 26 décembre 2017</p>
+              </div>
+              <div class="row">
+                <div class="col-6 offset-3">
+                  <img class="card-img-top" src="./assent/img/fetes-de-fin-dannee.png" alt="le locametre wadesda">
+                </div>
+              </div>
+              <div class="card-body">
+                <p>Publié dans: INFOS PRATIQUES</p>
+              </div>
+            </div>
+          </div>
+          <!--
+
                 <div class="col-12 list-item-carte-Article">
                     <div class="card">
-                        <div class="card-header"> 
+                        <div class="card-header">
                             <p class="text-center">ACTION DU SL AU PETERBOS</p>
                             <p>par Syndicat des Locataires le 9 juin 2018</p>
                         </div>
                         <div class="row">
                                 <div class="col-6 offset-3">
-                                    <img class="card-img-top" src="./assent/img/" alt="Card image cap" 
+                                    <img class="card-img-top" src="./assent/img/" alt="Card image cap"
                                     onclick="document.location.href='https://www.dropbox.com/s/jmk8bztoyh20oke/PHARE%20134.pdf?dl=0'">
                                 </div>
                             </div>
                         <div class="card-body">
                             <p></p>
-                            <p></p> 	        
+                            <p></p>
                         </div>
                     </div>
                 </div>
@@ -544,7 +539,7 @@
                         </div>
                         <div class="row">
                                 <div class="col-6 offset-3">
-                                    <img class="card-img-top" src="./assent/img/" alt="Card image cap" 
+                                    <img class="card-img-top" src="./assent/img/" alt="Card image cap"
                                     onclick="document.getElementById('').style.display='block'">
                                 </div>
                             </div>
@@ -554,78 +549,60 @@
                     </div>
                 </div>
                 -->
-                </div>
-                <nav aria-label="myNavigation">
-                    <ul class="pagination">    
-                    </ul>
-                    <label id="posiActu"></label>
-                </nav>
-            </div> 
         </div>
-    </section>
-    <footer >
-						<div class="footerHeader" >
+        <nav aria-label="myNavigation">
+          <ul class="pagination">
+          </ul>
+          <label id="posiActu"></label>
+        </nav>
+      </div>
+    </div>
+  </section>
+  <footer>
 
-                        </div>
-						<div class="footerForm">
-                            <div class="row">
-                                <div class="col-md-7" >
-                                        <h3>Qui Sommes-Nous ?</h3>
-                                        <p>
-                                                PRÉSENTATION DU SYNDICAT DES LOCATAIRES
-                                                <br/>
-                                                <br/>
-                                                
-                                                
-                                                
-                                                Le SYNDICAT DES LOCATAIRES DE LOGEMENTS SOCIAUX fut créé en 1974 par un groupe de travailleurs sociaux et de locataires du Foyer Bruxellois.
-                                                
-                                                
-                                                
-                                                Organisation pluraliste de locataires, nous luttons pour que soit reconnu en Belgique le Droit à l’Habitat qui se définit comme suit :<br/>
-                                                <br/>
-                                                
-                                                
-                                                
-                                                « Toute personne a droit à un habitat décent dont la charge logement(loyer + charges)doit être compatible avec ses ressources.
-                                                
-                                                Ce droit est garanti par l’État FÉDÉRAL et donc opposable à ce dernier ».
-                                        
-                                        </p>
-                                </div>
-						
-                                
-                                <div class="col-md-5" >
-								    <h3>Contactez-Nous</h3>
-								    <ul>
-										<li>Phone : 02/522 98 69</li>
-										<li>E-mail :<br>syndicatdeslocataires@gmail.com</li>
-								    </ul>
-								
-                                </div>
-                                <div class="col-md-4">
-                                        <h3>Notre Adresse </h3>
-                                        <iframe src="https://www.google.com/maps/embed/v1/place?q=Square+Albert+1er%2C+N%C2%B0+321070+Anderlecht&amp;key=AIzaSyCq4vWNv6eCGe2uvhPRGWQlv80IQp8dwTE" class="contact-map" width="100%" height="auto" frameborder="0" style="margin-top:50px;"></iframe>
-                                </div>
-								<div class="col-md-4">
-									<h3>Abonnez-vous à La Newsletter</h3>
-									<form class="signUpNewsletter" action="" method="get">
-										<input name="" class="gt-email form-control" placeholder="Entrez votre @dresse e-mail ici" type="text">
-										<input name="" class="btn-go" value="Go" type="button">
-									</form>	
-							    </div>
-                                <div class="col-md-4">
-                                    <h3>Nos Partenaires</h3> 
-                                    <p>S.L.R.B.	<a><img id="logo" src="http://www.slrb.irisnet.be/sites/website/themes/slrb_theme/logo.png" alt="partner"></a></p>
-                                    <p>Fédération Wallonie-Bruxelles<br/> 
-                                        <a><img src="http://www.educationpermanente.cfwb.be/fileadmin/common/cfwb_css/img/logo56-51.jpg" alt="partner"></a></p>
 
-                                </div>
-                            </div>   
-						</div>
+    <div class="row">
+      <div class="col-md-6 contacteznous">
+        <h3>Contactez-Nous</h3>
+        <ul>
+          <li>Phone : 02/522 98 69</li>
+          <li>E-mail :<br>syndicatdeslocataires@gmail.com</li>
+        </ul>
 
-				</footer>
-    <!--
+      </div>
+
+      <div class="col-md-6 abonnezvous">
+        <h3>Abonnez-vous à La Newsletter</h3>
+        <div class="newsletter">
+          <form class="signUpNewsletter" action="" method="get">
+            <div class="email">
+              <input name="" class="gt-email form-control" placeholder="Entrez votre @dresse e-mail ici" type="text">
+            </div>
+            <div class="btnnewsletter">
+              <input name="" class="btn-go" value="Go" type="button">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 partenaires">
+        <h3>Nos Partenaires</h3>
+        <div class="slrb">
+          <p>S.L.R.B. <a><img src="http://www.slrb.irisnet.be/sites/website/themes/slrb_theme/logo.png" alt="partner"></a></p>
+        </div>
+        <div class="fwb">
+          <p>Fédération Wallonie-Bruxelles<br/>
+            <a><img src="http://www.educationpermanente.cfwb.be/fileadmin/common/cfwb_css/img/logo56-51.jpg" alt="partner"></a></p>
+        </div>
+      </div>
+    </div>
+
+
+
+  </footer>
+  <!--
                                                                     ******************************
                                                                     *                            *
                                                                     *                            *
@@ -634,485 +611,466 @@
                                                                     *                            *
                                                                     ******************************
     -->
-    <div id="modale" class="modal">
-                
-            <form class="modal-content animate" action=""id="LaFlandreInstitutionnaliseLesDiscriminationsAuLogement">
-                    <span onclick="fermerModal()"
-                    class="close">&times;</span>
-                <div class="container">
-                    <h3 class="colorRED">LA FLANDRE INSTITUTIONNALISE <br>LES DISCRIMINATIONS AU LOGEMENT.</h3>
-                    <p>par Syndicat des Locataires le 6 février 2018</p>
-                    <p class="text-center">
-                        <span class="fuo">
+  <div id="modale" class="modal">
+
+    <form class="modal-content animate" action="" id="LaFlandreInstitutionnaliseLesDiscriminationsAuLogement">
+      <span onclick="fermerModal()" class="close">&times;</span>
+      <div class="container">
+        <h3 class="colorRED">LA FLANDRE INSTITUTIONNALISE <br>LES DISCRIMINATIONS AU LOGEMENT.</h3>
+        <p>par Syndicat des Locataires le 6 février 2018</p>
+        <p class="text-center">
+          <span class="fuo">
                                 La Flandre institutionnalise les discriminations au logement
                         </span>
-                    </p>
-                </div>
+        </p>
+      </div>
 
-                <div class="container">
-                        <img class="img-fluid mx-auto d-flex" src="./assent/img/la-flandre-institutionnalise-les-discriminations-au-logement.png" alt="image cap">
-                </div>
-                <div class="container">
-                    <p class="colorBLUE">Sophie Rohonyi (DéFI), José Garcia (Syndicat des Locataires) et Olivier Hamal (Syndicat national des Propriétaires)
-                    </p>
-                    <h6>Publié le vendredi 02 février 2018 à 14h49</h6>
-                    <p>
-                        <span class="italique">
-                        « Chacun a le droit de mener une vie conforme à la dignité humaine. Ce droit comprend le droit à un logement décent« </span>, prévoit notre Constitution depuis 1994. Près de vingt-ans plus tard, l’heure est à la colère. Colère de voir que ce droit est à géométrie variable. Colère de constater que la disponibilité d’un logement peut dépendre d’un simple accent ou nom de famille.
-                    </p>
-                    <p>
-                            Si chaque Région est concernée et réfléchit aux mesures à même de lutter contre les discriminations au logement, nous constatons que le gouvernement flamand a adopté une approche curieuse pour ne pas dire dangereuse: celle de défendre le droit au logement en légitimant voire en institutionnalisant ces discriminations, en particulier lorsqu’elles sont basées sur la langue. La Flandre profite ainsi de l’absence d’organe compétent pour connaître des discriminations linguistiques, lacune qu’a pourtant pointé du doigt le dernier rapport de la commission d’évaluation des lois anti-discriminations.
-                    </p><br>
-                    <h4>37% de discriminations au logement</h4>
-                    <p>
-                            Selon UNIA, la discrimination au logement concerne plus de 37% des discriminations observées dans le secteur des biens et services. Un chiffre en constante augmentation.
-                    </p>
-                    <p>
-                            En Flandre, 45% des refus de location le sont pour des critères « raciaux » et concernent tant le logement privé que le logement social.
-                    </p>
-                    <p>
-                            Plutôt que de s’y attaquer, la Flandre adopte des textes de loi portant atteinte à la libre circulation des personnes et à l’accès au logement.
-                    </p>
-                    <p>
-                            L’un d’entre eux est un décret adopté en mars 2017 qui, dans les communes à facilités de la périphérie bruxelloise, réserve l’accès au logement social aux seules personnes qui ont un niveau A1 de néerlandais.
-                    </p>
-                    <p>
-                            Pour bénéficier ou continuer de bénéficier d’un logement social, les locataires et candidats locataires doivent donc, dans l’année de la prise en location, démontrer non plus leur volonté d’apprendre le néerlandais et leurs démarches en ce sens, mais leur connaissance effective du néerlandais.
-                    </p>
-                    <p>
-                            Le parti  DéFI a introduit un recours en annulation contre ce décret en ce qu’il a pour effet de pénaliser des personnes précarisées ou fragilisées socialement dans leur accès à un logement en adéquation avec leurs revenus pour des raisons purement linguistiques.
-                    </p>
-                    <h4>Alternative au décret « wonen in eigen streek »
+      <div class="container">
+        <img class="img-fluid mx-auto d-flex" src="./assent/img/la-flandre-institutionnalise-les-discriminations-au-logement.png" alt="image cap">
+      </div>
+      <div class="container">
+        <p class="colorBLUE">Sophie Rohonyi (DéFI), José Garcia (Syndicat des Locataires) et Olivier Hamal (Syndicat national des Propriétaires)
+        </p>
+        <h6>Publié le vendredi 02 février 2018 à 14h49</h6>
+        <p>
+          <span class="italique">
+                        « Chacun a le droit de mener une vie conforme à la dignité humaine. Ce droit comprend le droit à un logement décent« </span>, prévoit notre Constitution depuis 1994. Près de vingt-ans plus tard, l’heure est à la colère.
+          Colère de voir que ce droit est à géométrie variable. Colère de constater que la disponibilité d’un logement peut dépendre d’un simple accent ou nom de famille.
+        </p>
+        <p>
+          Si chaque Région est concernée et réfléchit aux mesures à même de lutter contre les discriminations au logement, nous constatons que le gouvernement flamand a adopté une approche curieuse pour ne pas dire dangereuse: celle de défendre le droit au logement
+          en légitimant voire en institutionnalisant ces discriminations, en particulier lorsqu’elles sont basées sur la langue. La Flandre profite ainsi de l’absence d’organe compétent pour connaître des discriminations linguistiques, lacune qu’a pourtant
+          pointé du doigt le dernier rapport de la commission d’évaluation des lois anti-discriminations.
+        </p><br>
+        <h4>37% de discriminations au logement</h4>
+        <p>
+          Selon UNIA, la discrimination au logement concerne plus de 37% des discriminations observées dans le secteur des biens et services. Un chiffre en constante augmentation.
+        </p>
+        <p>
+          En Flandre, 45% des refus de location le sont pour des critères « raciaux » et concernent tant le logement privé que le logement social.
+        </p>
+        <p>
+          Plutôt que de s’y attaquer, la Flandre adopte des textes de loi portant atteinte à la libre circulation des personnes et à l’accès au logement.
+        </p>
+        <p>
+          L’un d’entre eux est un décret adopté en mars 2017 qui, dans les communes à facilités de la périphérie bruxelloise, réserve l’accès au logement social aux seules personnes qui ont un niveau A1 de néerlandais.
+        </p>
+        <p>
+          Pour bénéficier ou continuer de bénéficier d’un logement social, les locataires et candidats locataires doivent donc, dans l’année de la prise en location, démontrer non plus leur volonté d’apprendre le néerlandais et leurs démarches en ce sens, mais
+          leur connaissance effective du néerlandais.
+        </p>
+        <p>
+          Le parti DéFI a introduit un recours en annulation contre ce décret en ce qu’il a pour effet de pénaliser des personnes précarisées ou fragilisées socialement dans leur accès à un logement en adéquation avec leurs revenus pour des raisons purement linguistiques.
+        </p>
+        <h4>Alternative au décret « wonen in eigen streek »
                         </h4>
-                    <p>
-                            Un autre texte qui suscite notre inquiétude est une note-cadre actuellement à l’étude au Parlement flamand, en Commission réunie pour le Logement, la Lutte contre la pauvreté et l’Égalité des chances, compétences qui relèvent de la Ministre N-VA Liesbeth Homans, dont la haine vis-à-vis des francophones n’est plus à démontrer. Ses initiateurs, six députés N-VA, proposent une alternative au décret « wonen in eigen streek » (« habiter dans sa propre région ») annulé par la Cour constitutionnelle le 7 novembre 2013 suite à une action en justice introduite par DéFI, à l’époque FDF.
-                    </p>
-                    <p>
-                            Par cet arrêt, la Cour constitutionnelle avait estimé, comme la Cour de justice de l’UE avant elle, que la condition posée par le décret pour bénéficier d’une logement – à savoir la preuve d’un lien suffisant avec la commune où se situe le bien – constituait une  restriction aux libertés fondamentales. Il avait en effet pour conséquence de privilégier les candidats acquéreurs flamands aux candidats provenant d’autres Régions.
-                    </p>
-                    <p>
-                            Les députés flamands ont raison de chercher une alternative à ce décret. Ils en sont même obligés. Toutefois, on comprend vite à la lecture de leur note que le but est en réalité d’ insuffler une seconde vie au décret « Wonen in eigen streek ».
-                    </p>
-                    <p>
-                            Celle-ci prévoit en effet que dans les 100 communes flamandes où le coût de l’immobilier est le plus important et où le pourcentage de personnes venues d’autres Régions est le plus élevé, 20 à 40% des projets d’habitation seront réservés aux habitants de la commune et leurs enfants, aux personnes qui y travaillent ou aux personnes dont les enfants suivent leur cursus scolaire. Seront donc exclus les candidats acquéreurs venant d’autres communes et en particulier les nombreux Bruxellois cherchant à s’établir en périphérie bruxelloise.
-                    </p>
-                    <p>
-                            Si l’objectif de maintenir un prix du foncier accessible à des groupes de population locale est parfaitement légitime, nous refusons qu’il implique l’exclusion d’autres groupes de population.
-                    </p>
-                    <p>
-                            Nous demandons donc au Parlement flamand qu’il travaille à la recherche d’une solution équilibrée, respectueuse de la libre circulation des personnes, plutôt que restrictive, discrétionnaire, pour ne pas dire protectionniste.
-                    </p>
-                    <p class="gras">
-                            Sophie Rohonyi, Présidente de DéFI Périphérie; José Garcia, Secrétaire général du Syndicat des Locataires – Huurdersbond et Olivier Hamal, Président du Syndicat national des Propriétaires et des Copropriétaires – Nationaal eigenaars- en Mede-eigenaarsSyndicaat.
-                    </p>
-                    <h4><span class="fuo"Note de la rédaction de la RTBF 
+        <p>
+          Un autre texte qui suscite notre inquiétude est une note-cadre actuellement à l’étude au Parlement flamand, en Commission réunie pour le Logement, la Lutte contre la pauvreté et l’Égalité des chances, compétences qui relèvent de la Ministre N-VA Liesbeth
+          Homans, dont la haine vis-à-vis des francophones n’est plus à démontrer. Ses initiateurs, six députés N-VA, proposent une alternative au décret « wonen in eigen streek » (« habiter dans sa propre région ») annulé par la Cour constitutionnelle
+          le 7 novembre 2013 suite à une action en justice introduite par DéFI, à l’époque FDF.
+        </p>
+        <p>
+          Par cet arrêt, la Cour constitutionnelle avait estimé, comme la Cour de justice de l’UE avant elle, que la condition posée par le décret pour bénéficier d’une logement – à savoir la preuve d’un lien suffisant avec la commune où se situe le bien – constituait
+          une restriction aux libertés fondamentales. Il avait en effet pour conséquence de privilégier les candidats acquéreurs flamands aux candidats provenant d’autres Régions.
+        </p>
+        <p>
+          Les députés flamands ont raison de chercher une alternative à ce décret. Ils en sont même obligés. Toutefois, on comprend vite à la lecture de leur note que le but est en réalité d’ insuffler une seconde vie au décret « Wonen in eigen streek ».
+        </p>
+        <p>
+          Celle-ci prévoit en effet que dans les 100 communes flamandes où le coût de l’immobilier est le plus important et où le pourcentage de personnes venues d’autres Régions est le plus élevé, 20 à 40% des projets d’habitation seront réservés aux habitants
+          de la commune et leurs enfants, aux personnes qui y travaillent ou aux personnes dont les enfants suivent leur cursus scolaire. Seront donc exclus les candidats acquéreurs venant d’autres communes et en particulier les nombreux Bruxellois cherchant
+          à s’établir en périphérie bruxelloise.
+        </p>
+        <p>
+          Si l’objectif de maintenir un prix du foncier accessible à des groupes de population locale est parfaitement légitime, nous refusons qu’il implique l’exclusion d’autres groupes de population.
+        </p>
+        <p>
+          Nous demandons donc au Parlement flamand qu’il travaille à la recherche d’une solution équilibrée, respectueuse de la libre circulation des personnes, plutôt que restrictive, discrétionnaire, pour ne pas dire protectionniste.
+        </p>
+        <p class="gras">
+          Sophie Rohonyi, Présidente de DéFI Périphérie; José Garcia, Secrétaire général du Syndicat des Locataires – Huurdersbond et Olivier Hamal, Président du Syndicat national des Propriétaires et des Copropriétaires – Nationaal eigenaars- en Mede-eigenaarsSyndicaat.
+        </p>
+        <h4><span class="fuo"Note de la rédaction de la RTBF
                         ></span></h4>
-                    <p>
-                            La part d’habitants francophones dans les communes de la périphérie bruxelloise est importante. Dans ces entités, situées en Flandre, les francophones représentent parfois jusqu’à 80% de la population.
-                    </p>
-                    <p>
-                            Pour le parti DéFI, qui publie cette carte blanche avec le syndicat des locataires et le syndicat des propriétaires <span class="colorRED">– chose rare, ces deux organes sont généralement souvent en désaccord –</span>, la défense des francophones dans les six communes à facilités mais aussi les autres communes du Brabant flamand est un véritable combat, politique et idéologique. Quand il touche au logement, il revêt une importance encore plus forte : le droit à un logement décent est inscrit dans la Constitution.
-                    </p>
-                    <p>
-                            En clair : pour trouver un logement décent, les candidats ont le droit de choisir librement leur lieu de résidence. Mais pour les amarantes, cette liberté fondamentale est stoppée depuis plusieurs années par la Région flamande. Après le décret « wonen in eigen streek » (« habiter dans sa propre région »), retoqué par la Cour constitutionnelle et ayant fait l’objet d’une fronde francophone, place à une nouvelle mouture proposée par la N-VA. Le parti nationaliste fixe désormais des critères chiffrés permettant de réserver des logements publics aux seuls locataires pouvant prouver un lien avec la Flandre. 
-                    </p>
-                    <p>
-                            Objectif : empêcher l’établissement en Flandre de néo-habitants, provenant d’autres Régions. Et par là même de francophones déjà nombreux, notamment dans le Brabant flamand. Pour la N-VA, il s’agit d’éviter la francisation excessive de plusieurs communes. Francisation qui pourrait pousser les partis francophones à réactiver une vieille revendication : l’élargissement de Bruxelles aux communes de la périphérie. Officiellement, la Flandre émet une contrainte : pour pouvoir vivre en Flandre, il faut accepter de s’intégrer en Flandre. Cela passe par sa volonté de vouloir parler le néerlandais, dans ses contacts avec l’administration, l’école de ses enfants, dans ses loisirs, de travailler en Flandre… 
-                    </p>
-                    <p>
-                            C’est dans ce contexte global qu’intervient cette carte blanche au moment où le Parlement flamand débat d’un nouveau texte.
-                    </p>
-                </div>
-                <div class="container">
-                    <p>Publié dans: ACTIONS, ARTICLES DE PRESSE, SYNDICAT DES LOCATAIRES</p>
-                    
-                </div>
-            </form>
+        <p>
+          La part d’habitants francophones dans les communes de la périphérie bruxelloise est importante. Dans ces entités, situées en Flandre, les francophones représentent parfois jusqu’à 80% de la population.
+        </p>
+        <p>
+          Pour le parti DéFI, qui publie cette carte blanche avec le syndicat des locataires et le syndicat des propriétaires <span class="colorRED">– chose rare, ces deux organes sont généralement souvent en désaccord –</span>, la défense des francophones
+          dans les six communes à facilités mais aussi les autres communes du Brabant flamand est un véritable combat, politique et idéologique. Quand il touche au logement, il revêt une importance encore plus forte : le droit à un logement décent est
+          inscrit dans la Constitution.
+        </p>
+        <p>
+          En clair : pour trouver un logement décent, les candidats ont le droit de choisir librement leur lieu de résidence. Mais pour les amarantes, cette liberté fondamentale est stoppée depuis plusieurs années par la Région flamande. Après le décret « wonen
+          in eigen streek » (« habiter dans sa propre région »), retoqué par la Cour constitutionnelle et ayant fait l’objet d’une fronde francophone, place à une nouvelle mouture proposée par la N-VA. Le parti nationaliste fixe désormais des critères
+          chiffrés permettant de réserver des logements publics aux seuls locataires pouvant prouver un lien avec la Flandre.
+        </p>
+        <p>
+          Objectif : empêcher l’établissement en Flandre de néo-habitants, provenant d’autres Régions. Et par là même de francophones déjà nombreux, notamment dans le Brabant flamand. Pour la N-VA, il s’agit d’éviter la francisation excessive de plusieurs communes.
+          Francisation qui pourrait pousser les partis francophones à réactiver une vieille revendication : l’élargissement de Bruxelles aux communes de la périphérie. Officiellement, la Flandre émet une contrainte : pour pouvoir vivre en Flandre, il
+          faut accepter de s’intégrer en Flandre. Cela passe par sa volonté de vouloir parler le néerlandais, dans ses contacts avec l’administration, l’école de ses enfants, dans ses loisirs, de travailler en Flandre…
+        </p>
+        <p>
+          C’est dans ce contexte global qu’intervient cette carte blanche au moment où le Parlement flamand débat d’un nouveau texte.
+        </p>
+      </div>
+      <div class="container">
+        <p>Publié dans: ACTIONS, ARTICLES DE PRESSE, SYNDICAT DES LOCATAIRES</p>
 
-                <form class="modal-content animate" action=""id="PETERBOS">
-                                <span onclick="fermerModal()"
-                                class="close">&times;</span>
-                    <div class="container">
-                        <h3 class="colorRED">ACTION DU SL AU PETERBOS</h3>
-                        <p>par Syndicat des Locataires le 9 juin 2018</p>
-                    </div>
+      </div>
+    </form>
 
-                    <div class="container">
-                            <img class="img-fluid mx-auto d-flex" src="./assent/img/ACTION DU SL AU PETERBOS.png" alt="image cap">
-                    </div>
-                    <div class="container">
-                        <p class="gras">Anderlecht – Pour les locataires de ce logement social de 15 étages, la situation devient insupportable.</p>
-                        <p class="colorBLUE">Habiter dans un immeuble de 15 étages dont les ascenseurs sont tombés en panne, cela veut dire plus de 200 marches à monter et descendre quotidiennement si on habite les derniers étages.</p>
-                        <p class="colorBLUE">C’est ce que vivent Omar et les quelque 600 autres locataires de l’immeuble 2 du parc du Peterbos depuis 15 jours ! <span class="italique">« En plus, ce n’est pas la première fois qu’ils tombent en panne ! Et c’est loin d’être le seul problème dans cet immeuble. Il y a des personnes âgées qui vivent aux étages. Sans parler des personnes à mobilité réduite, des enfants ou des personnes avec un problème de santé. Même les médecins, les assistants sociaux ou les kinés ne veulent plus venir »</span>, dénonce-t-il.</p>
-                        <p class="colorBLUE">Avec une septantaine d’autres locataires et ils ont décidé de faire bouger les choses, ce lundi. <span class="italique">« Nous sommes allés voir la police, parce que c’est le premier contact des citoyens qui se sentent en danger, puis les pompiers, puis la justice de paix »</span>, explique José Garcia, secrétaire général du syndicat des locataires.</p>
-                        <p class="colorBLUE">Vers midi, ils ont été entendus au siège de Comensia qui gère des milliers de logements sociaux à Bruxelles. La société a promis qu’un réparateur de Schindler passerait dans la journée ou qu’elle prendrait contact avec une autre société si cela n’était pas possible.</p>
-                        <p class="colorBLUE">Ils reconnaissent également que le bâtiment n’est pas spécialement en bon état et promettent de faire quelque chose pour régler la situation au plus vite. Preuve en est, ce lundi vers 15 h 20, un réparateur était sur place pour réparer l’ascenseur. Une réparation très rapide qui soulage les locataires qui se demandent quand même pourquoi ils ont dû attendre l’intervention pendant deux semaines. D’après le secrétaire général, il s’agirait d’un litige entre la société Schindler et Comensia.</p>
-                        <p class="colorBLUE">José Garcia prévient : <span class="italique">« Ce n’est que le début des problèmes. Les bâtiments ont été construits dans les années 1970 et déjà à l’époque on avait prévenu que les matériaux n’étaient pas de qualité. C’est un cri d’alarme que nous lançons aujourd’hui. Il faut que les autorités régionales réalisent ce qui est en train de se passer dans les logements sociaux. »</span></p>
-                        <p class="colorBLUE">Hélène Ghilain</p>
-                    </div>
-                    <div class="container">
-                        <p>Publié dans: ACTIONS, ARTICLES DE PRESSE, SYNDICAT DES LOCATAIRES</p>
-                        <p>Tagué:HUURDERSBOND, SYNDICAT DES LOCATAIRES</p>
-                    </div>
-                </form>
-                <form class="modal-content animate" action=""id="brique-dor-2018-slrb">
-                                <span onclick="fermerModal()"
-                                class="close">&times;</span>
-                        <div class="container">
-                                <h3 class="colorRED">BRIQUE D’OR 2018 SLRB</h3>
-                                <p>par Syndicat des Locataires le 28 avril 2018</p>
-                            </dic>
-                            <div class="container">
-                                <iframe src="./assent/video/BRIQUE D’OR 2018 SLRB.mp4" width="100%" height="600" allowfullscreen></iframe>
-                            </div>
-                            <div class="container colorBLUE">
-                                <p><h3 class="text-center">BRIQUE D’OR 2018
+    <form class="modal-content animate" action="" id="PETERBOS">
+      <span onclick="fermerModal()" class="close">&times;</span>
+      <div class="container">
+        <h3 class="colorRED">ACTION DU SL AU PETERBOS</h3>
+        <p>par Syndicat des Locataires le 9 juin 2018</p>
+      </div>
+
+      <div class="container">
+        <img class="img-fluid mx-auto d-flex" src="./assent/img/ACTION DU SL AU PETERBOS.png" alt="image cap">
+      </div>
+      <div class="container">
+        <p class="gras">Anderlecht – Pour les locataires de ce logement social de 15 étages, la situation devient insupportable.</p>
+        <p class="colorBLUE">Habiter dans un immeuble de 15 étages dont les ascenseurs sont tombés en panne, cela veut dire plus de 200 marches à monter et descendre quotidiennement si on habite les derniers étages.</p>
+        <p class="colorBLUE">C’est ce que vivent Omar et les quelque 600 autres locataires de l’immeuble 2 du parc du Peterbos depuis 15 jours ! <span class="italique">« En plus, ce n’est pas la première fois qu’ils tombent en panne ! Et c’est loin d’être le seul problème dans cet immeuble. Il y a des personnes âgées qui vivent aux étages. Sans parler des personnes à mobilité réduite, des enfants ou des personnes avec un problème de santé. Même les médecins, les assistants sociaux ou les kinés ne veulent plus venir »</span>,
+          dénonce-t-il.
+        </p>
+        <p class="colorBLUE">Avec une septantaine d’autres locataires et ils ont décidé de faire bouger les choses, ce lundi. <span class="italique">« Nous sommes allés voir la police, parce que c’est le premier contact des citoyens qui se sentent en danger, puis les pompiers, puis la justice de paix »</span>,
+          explique José Garcia, secrétaire général du syndicat des locataires.</p>
+        <p class="colorBLUE">Vers midi, ils ont été entendus au siège de Comensia qui gère des milliers de logements sociaux à Bruxelles. La société a promis qu’un réparateur de Schindler passerait dans la journée ou qu’elle prendrait contact avec une autre société si cela
+          n’était pas possible.</p>
+        <p class="colorBLUE">Ils reconnaissent également que le bâtiment n’est pas spécialement en bon état et promettent de faire quelque chose pour régler la situation au plus vite. Preuve en est, ce lundi vers 15 h 20, un réparateur était sur place pour réparer l’ascenseur.
+          Une réparation très rapide qui soulage les locataires qui se demandent quand même pourquoi ils ont dû attendre l’intervention pendant deux semaines. D’après le secrétaire général, il s’agirait d’un litige entre la société Schindler et Comensia.</p>
+        <p class="colorBLUE">José Garcia prévient : <span class="italique">« Ce n’est que le début des problèmes. Les bâtiments ont été construits dans les années 1970 et déjà à l’époque on avait prévenu que les matériaux n’étaient pas de qualité. C’est un cri d’alarme que nous lançons aujourd’hui. Il faut que les autorités régionales réalisent ce qui est en train de se passer dans les logements sociaux. »</span></p>
+        <p class="colorBLUE">Hélène Ghilain</p>
+      </div>
+      <div class="container">
+        <p>Publié dans: ACTIONS, ARTICLES DE PRESSE, SYNDICAT DES LOCATAIRES</p>
+        <p>Tagué:HUURDERSBOND, SYNDICAT DES LOCATAIRES</p>
+      </div>
+    </form>
+    <form class="modal-content animate" action="" id="brique-dor-2018-slrb">
+      <span onclick="fermerModal()" class="close">&times;</span>
+      <div class="container">
+        <h3 class="colorRED">BRIQUE D’OR 2018 SLRB</h3>
+        <p>par Syndicat des Locataires le 28 avril 2018</p>
+        </dic>
+        <div class="container">
+          <iframe src="./assent/video/BRIQUE D’OR 2018 SLRB.mp4" width="100%" height="600" allowfullscreen></iframe>
+        </div>
+        <div class="container colorBLUE">
+          <p>
+            <h3 class="text-center">BRIQUE D’OR 2018
 <br><br>
                                         SLRB</h3></p>
-                                    <p>Depuis une vingtaine d’années déjà, le Syndicat des Locataires met en avant les
-                                            bonnes expériences et les bonnes pratiques des sociétés immobilières de service
-                                            public.<br>
-                                            En effet, si ce secteur est fortement critiqué, il n’en reste pas moins que de bonnes
-                                            choses sont également réalisées. Tout n’est donc pas noir dans le logement social.
-                                    </p>
-                                    <p>Notre organisation qui, depuis plus de 45 ans déjà tente d’améliorer les conditions de
-                                            vie et de logement des locataires en général et des locataires de logements sociaux
-                                            en particulier, a donc décidé une fois par an au moins de mettre en valeur les bonnes
-                                            pratiques du secteur.
-                                        <br>
-                                            De multiples Brique d’Or ont été attribuées pour les efforts dans le logement social,
-                                            les économies d’énergie via notamment la mise en place des systèmes de
-                                            cogénération, la construction d’immeubles passifs, etc, etc…
-                                    </p>
-                                    <p>Cette année, c’est la SLRB qui reçoit ce prix car nous estimons que la mise en place
-                                                    d’un système de concertation permanent entre les usagers d’une part et la société de tutelle
-                                                    des SISP d’autre part <span class="fuo italique gras">est une des solutions et une des conditions</span> de l’amélioration
-                                                    du bien-être des locataires du logement social.
-                                        <br>
-                                                    On dit que le Belge a une brique dans le ventre, mais je pense qu’on peut dire
-                                                    également que les Belges ont la concertation dans le cerveau.
-                                                    
-                                    </p>
-                                    <p>
-                                            Si nous avons également souhaité remettre cette distinction à la SLRB, c’est parce
-                                            que nous sommes malheureusement convaincus qu’il y a aujourd’hui dans notre
-                                            région de très grandes difficultés pour construire de nouveaux logements sociaux.<br>
-                                            Nous espérons que ce prix encouragera la SLRB dans ses efforts pour réaliser ses
-                                            objectifs et la renforcera dans ses rapports tant vis-à- vis du pouvoir régional que des
-                                            pouvoirs communaux.<br>
-                                            Une SLRB forte et plus indépendante vis-à- vis des pouvoirs politiques est une des
-                                            garanties importantes de notre souhait à tous : une augmentation substantielle de
-                                            l’offre de logements sociaux en Région bruxelloise.<br>
-                                            Je tiens à remercier la SLRB pour avoir accepté en dehors de toute cadre légal
-                                            contraignant l’instauration de ce comité de concertation social.
-                                    </p>
-                                    <p class="italique gras">
-                                        <span class="fuo">
+          <p>Depuis une vingtaine d’années déjà, le Syndicat des Locataires met en avant les bonnes expériences et les bonnes pratiques des sociétés immobilières de service public.
+            <br> En effet, si ce secteur est fortement critiqué, il n’en reste pas moins que de bonnes choses sont également réalisées. Tout n’est donc pas noir dans le logement social.
+          </p>
+          <p>Notre organisation qui, depuis plus de 45 ans déjà tente d’améliorer les conditions de vie et de logement des locataires en général et des locataires de logements sociaux en particulier, a donc décidé une fois par an au moins de mettre en valeur
+            les bonnes pratiques du secteur.
+            <br> De multiples Brique d’Or ont été attribuées pour les efforts dans le logement social, les économies d’énergie via notamment la mise en place des systèmes de cogénération, la construction d’immeubles passifs, etc, etc…
+          </p>
+          <p>Cette année, c’est la SLRB qui reçoit ce prix car nous estimons que la mise en place d’un système de concertation permanent entre les usagers d’une part et la société de tutelle des SISP d’autre part <span class="fuo italique gras">est une des solutions et une des conditions</span>            de l’amélioration du bien-être des locataires du logement social.
+            <br> On dit que le Belge a une brique dans le ventre, mais je pense qu’on peut dire également que les Belges ont la concertation dans le cerveau.
+
+          </p>
+          <p>
+            Si nous avons également souhaité remettre cette distinction à la SLRB, c’est parce que nous sommes malheureusement convaincus qu’il y a aujourd’hui dans notre région de très grandes difficultés pour construire de nouveaux logements sociaux.<br>            Nous espérons que ce prix encouragera la SLRB dans ses efforts pour réaliser ses objectifs et la renforcera dans ses rapports tant vis-à- vis du pouvoir régional que des pouvoirs communaux.<br> Une SLRB forte et plus indépendante vis-à- vis
+            des pouvoirs politiques est une des garanties importantes de notre souhait à tous : une augmentation substantielle de l’offre de logements sociaux en Région bruxelloise.<br> Je tiens à remercier la SLRB pour avoir accepté en dehors de toute
+            cadre légal contraignant l’instauration de ce comité de concertation social.
+          </p>
+          <p class="italique gras">
+            <span class="fuo">
                                             Encore une fois bravo et beaucoup de succès dans tout ce que vous
                                             entreprendrez !</span>
-                                    </p>
-                                    <br>
-                                    <p>
-                                            José GARCIA
-                                    </p>
-            
-                                    <p class="text-center gras souligne">
-                                            CONVENTION COLLECTIVE DE L’HABITAT
-                                    </p>
-                                    <p class="text-center gras">
-                                            Convention relative à la définition d’une politique commune favorisant la gestion optimale de l’information entre la Société du Logement de Région de Bruxelles-Capitale et le Syndicat des Locataires
-                                    </p>
-                                    <p>
-                                            Considérant qu’une partie de l’information que détient la SLRB et celle en partie détenue par le Syndicat des Locataires est essentielle tant pour les locataires que pour les SISP ;
-                                    </p>
-                                    <p>
-                                        Considérant que le Syndicat des Locataire de Logements Sociaux (ci-après dénommé SLLS) et la Société du Logement de la Région de Bruxelles-Capitale (ci-après dénommée SLRB) entendent définir une politique commune d’une gestion optimale de cette information ;
-                                    </p>
-                                    <p>
-                                        Considérant que le SLLS, créé en 1974, est une organisation pluraliste de locataires, reconnue comme groupement d’éducation permanente par le Communauté française et comme « groupe expert » auprès de divers pouvoirs publics, dont notamment le Ministère du Logement de la Région de Bruxelles-Capitale ;
-                                    </p>
-                                    <p>
-                                        Considérant que la SLRB est régie notamment par l’Ordonnance du 17 juillet 2003 portant le Code Bruxellois du Logement ;
-                                    </p>
-                                    <p>
-                                        Considérant que les paries contractantes privilégient la prévention des litiges, grâce à l’entremise de personnes compétentes, à la résolution devant des Cours et Tribunaux réputée longue, lourde et coûteuse ;
-                                    </p>
-                                    <p>
-                                        Que les parties contractantes préconisentla promotion de la communication entre les intéressés, à savoir la création de lieux de rencontre et d’écoute mutuelle, ainsi que la prise en considération des intérêts propres aux l’interlocuteurs;
-                                    </p>
-                                    <p>
-                                        Considérant que la création d’un lieu permanent de dialogue, de discussion et de concertation entre la SLRB et le SLLS est de nature à favoriser la bonne marche du secteur du logement social et une meilleure compréhension des décisions prises par l’autorité de tutelle;
-                                    </p>
-                                    <p class="gras">
-                                        LES PARTIES CONTRACTANTES ONT DÉCIDÉ CE QUI SUIT :
-                                    </p>
-                                    <p>
-                                        <span class="gras">Article 1</span> : la SLRB crée en son sein un comité permanent de concertation entre la SLRB et le SLLS. Cette instance est nommée « Comité de Concertation Sociale ».
-                                    </p>
-                                    <p>
-                                        <span class="gras">Article 2</span> : le Comité se réunit au moins une fois tous les trimestres.
-                                    </p>
-                                        <span class="gras">Article 3</span> : de commun accord, le Comité peut être élargi, à titre permanent ou provisoire, à d’autres acteurs sociaux actifs dans le secteur.
-                                    <p>
-                                        <span class="gras">Article 4</span> : le SLLS et la SLRB feront connaître à tous leurs partenaires le contenu de la présente convention.
-                                    </p>
-                                    <p>
-                                        <span class="gras">Article 5</span> : la présente convention est conclue pour une durée indéterminée et entrera en vigueur le jour où elle aura recueilli la signature des parties contractantes.
-                                    </p>
-                                    <p>
-                                        Chaque partie pourra y mettre fin moyennant notification par envoi recommandé d’un préavis motivé de 6 mois.
-                                    </p>
-                                    <p>
-                                        Fait à Anderlecht, le
-                                    </p>
-                                    <p class="text-center gras">
-                                        <br>
-                                            Pour la SLRB
-                                            <br><br><br><br>
-                                            Brigitte DE PAUW
-                                           <br> <br>
-                                            Présidente
-                                            <br><br><br><br>
-                                            Fabrice CUMPS
-                                            <br><br>
-                                            Vice-Président – Administrateur délégué
-                                            <br><br><br><br>
-                                            Yves LEMMENS
-                                            <br><br>
-                                            Directeur général
-                                            <br><br><br><br>
-                                            Dorien ROBBEN
-                                            <br><br>
-                                            Directrice générale adjointe
-                                            <br><br><br><br><br><br>
-                                            Pour le SYNDICAT DES LOCATAIRES
-                                    </p>
-                                    <p class="gras">
-                                        <span class="pull-left">José GARCIA</span> <span class="pull-right">Pierre</span>
-                                    </p><br><br>
-                                    <p class="text-center gras">
-                                            CLEMENT
-                                    </p>
-                                    <p class="gras">Secrétaire général</p>
-                                    <p class="text-center gras">Président</p>
-                                </div>
-                                <div class="container">
-                                    <p>Publié dans: CONVENTION COLLECTIVE DE L'HABITAT, VIDÉOS DU SYNDICAT DES LOCATAIRES</p>
-                                    
-                                </div>
-                            </div>
-                </form>
-                <form class="modal-content animate" action=""id="PhareN133">
-                                <span onclick="fermerModal()"
-                                class="close">&times;</span>
-                    <iframe src="./assent/pdf/Le Phare N°133.pdf#zoom=60" width="100%" height="98%"></iframe>
-                </form>
-                <form class="modal-content animate" action=""id="PhareN132">
-                        <span onclick="fermerModal()"
-                        class="close">&times;</span>
-            <iframe src="./assent/pdf/Le Phare N°132.pdf#zoom=60" width="100%" height="98%"></iframe>
-        </form>
-                <form class="modal-content animate" action=""id="Vous-voulez-nous-contacter">
-                                <span onclick="fermerModal()"
-                                class="close">&times;</span>
-                    <iframe src="./assent/pdf/Vous-voulez-nous-contacter.pdf#zoom=60" width="100%" height="98%" allowfullscreen></iframe>         
-                </form>
-                <form class="modal-content animate" action=""id="les-scientologues-forcent-la-cohabitation">
-                                <span onclick="fermerModal()"
-                                class="close">&times;</span>
-                        <div class="container">
-                                <h3 class="colorRED">Les scientologues forcent la cohabitation…</h3>
-                                <p>par Syndicat des Locataires le 3 mai 2018</p>
-                            </div>
-                            <div class="container">
-                                <p>
-                                    Un épisode de plus dans la saga qui concerne les 200 occupants-squatteurs des immeubles 100 à 103 du boulevard de Waterloo. Lundi matin vers cinq heures, une centaine de « travailleurs volontaires » envahissaient l’immense bâtiment, prétextant commencer des travaux d’aménagement pour la société BBAI, propriétaire et proche de l' »Eglise » de scientologie.
-                                </p>
-                                <p>
-                                    « Ils sont rentrés, ont cassé une porte et ont commencé à arracher la moquette, démonter les faux plafonds, couper les câbles électriques là ou ils le pouvaient », précise Bart De Win, un des occupants. « C’est clairement de la provocation. Je n’avais en tout cas pas l’impression qu’ils étaient là pour effectuer des travaux. Ils ont essayé de mettre des gens dehors, ouvert la porte d’un de nos occupants âgés d’une soixantaine d’années et l’ont bousculé dehors. »
-                                </p>
-                                <p>    
-                                    Depuis le 25 octobre dernier pourtant, les occupants étaient plus sereins. Protégés depuis cette date par une décision du Tribunal de première instance de Bruxelles qui avait refusé au propriétaire d’invoquer l’extrême urgence pour les expulser. De la sorte, la justice permettait légalement aux habitants de rester au sein du bâtiment jusqu’à ce que l’affaire soit réglée en justice de paix, la seule autorité habilitée à trancher en matière de logement. « Personne, même le propriétaire, d’un point de vue strictement légal ne peut nous expulser jusqu’à ce qu’il y ait un jugement sur le fond », précise José Garcia, secrétaire du syndicat des locataires. Ce jugement aura lieu jeudi.
-                                </p>
-                                <p>
-                                    Welcome to Bagdad
-                                </p>
-                                <p>    
-                                    « On a une équipe de volontaires de l' »Eglise » de scientologie qui est arrivée ici pour effectuer de petits travaux mais les squatteurs s’y sont opposés », se défend Alain Tizioli, attaché de presse de la BBAI. « Ces bâtiments, on les a achetés. Ils occasionnent des frais et nous avons un calendrier de travaux à respecter. » Malgré le fait que les importants travaux envisagés ne pourront pas avoir lieu sans un permis d’urbanisme qui n’a pas encore été demandé.
-                                </p>
-                                <p>   
-                                    Inscrit en toutes lettres sur le parvis de la bâtisse, « Back to Bagdad », fait référence à la manière de procéder à l’américaine de ceux que les occupants considèrent comme des envahisseurs. Face à eux, sûrs de leurs droits, les squatteurs ont fait appel aux forces de l’ordre en évitant toute violence. Ils ont ensuite fait appel à leur avocat, privilégiant la négociation à la force. « Leur présence aujourd’hui ne fait que compliquer les choses », a précisé Me Alexis Deswaef, l’avocat des occupants. « Ils ont des avocats et se font représenter dans les négociations mais dans notre dos, ils essaient de se faire justice à eux-mêmes. Dans un état de droit, c’est inacceptable. Tout ce que nous leur demandons, c’est de respecter la décision de justice. »
-                                </p>
-                                <p>    
-                                    Cohabitation difficile
-                                </p>
-                                <p>        
-                                    Lundi fin de journée, à la suite de négociations envenimées, un accord entre les occupants, les scientologues et la ville de Bruxelles que l’on sait peu encline à les voir s’installer à cet endroit est tombé. Les scientologues, occuperont le numéro 100 et 101 du boulevard de Waterloo, les occupants se regrouperont dans les parties 102 et 103 de l’immense bâtisse. Plus étonnant au terme de ces négociations, pour éviter tout conflit, toute provocation ou tout incident dû à cette cohabitation difficile, c’est la police qui surveillera ce que l’on peut appeler une frontière entre les deux parties du bâtiment.
-                                </p>
-                                <p>       
-                                    © La Libre Belgique 2006<br>
-                                    Sébastien Lambotte
-                                </p>
-            
-                            </div>
-                            <div class="container">
-                                <p>Publié dans: ACTIONS, ARTICLES DE PRESSE, SYNDICAT DES LOCATAIRES</p>
-                                <p>Tagué:HUURDERSBOND, SYNDICAT DES LOCATAIRES</p>
-                            </div>
-                </form>
-                <form class="modal-content animate" action=""id="locametreWadesda">
-                                <span onclick="fermerModal()"
-                                class="close">&times;</span>
-                        <div class="container">
-                                <h3 class="colorRED">Le locamètre, wadesda ?</h3>
-                                <p>par Syndicat des Locataires le 14 mars 2018</p>
-                            </div>
-                            <div class="container">
-                                    <img class="img-fluid mx-auto d-flex" src="./assent/img/le-locametre-wadesda.png" alt="image cap">
-                            </div>
-                            <div class="container">
-                                <p>
-                                    <h3 class="text-center colorBLUE">
+          </p>
+          <br>
+          <p>
+            José GARCIA
+          </p>
+
+          <p class="text-center gras souligne">
+            CONVENTION COLLECTIVE DE L’HABITAT
+          </p>
+          <p class="text-center gras">
+            Convention relative à la définition d’une politique commune favorisant la gestion optimale de l’information entre la Société du Logement de Région de Bruxelles-Capitale et le Syndicat des Locataires
+          </p>
+          <p>
+            Considérant qu’une partie de l’information que détient la SLRB et celle en partie détenue par le Syndicat des Locataires est essentielle tant pour les locataires que pour les SISP ;
+          </p>
+          <p>
+            Considérant que le Syndicat des Locataire de Logements Sociaux (ci-après dénommé SLLS) et la Société du Logement de la Région de Bruxelles-Capitale (ci-après dénommée SLRB) entendent définir une politique commune d’une gestion optimale de cette information
+            ;
+          </p>
+          <p>
+            Considérant que le SLLS, créé en 1974, est une organisation pluraliste de locataires, reconnue comme groupement d’éducation permanente par le Communauté française et comme « groupe expert » auprès de divers pouvoirs publics, dont notamment le Ministère
+            du Logement de la Région de Bruxelles-Capitale ;
+          </p>
+          <p>
+            Considérant que la SLRB est régie notamment par l’Ordonnance du 17 juillet 2003 portant le Code Bruxellois du Logement ;
+          </p>
+          <p>
+            Considérant que les paries contractantes privilégient la prévention des litiges, grâce à l’entremise de personnes compétentes, à la résolution devant des Cours et Tribunaux réputée longue, lourde et coûteuse ;
+          </p>
+          <p>
+            Que les parties contractantes préconisentla promotion de la communication entre les intéressés, à savoir la création de lieux de rencontre et d’écoute mutuelle, ainsi que la prise en considération des intérêts propres aux l’interlocuteurs;
+          </p>
+          <p>
+            Considérant que la création d’un lieu permanent de dialogue, de discussion et de concertation entre la SLRB et le SLLS est de nature à favoriser la bonne marche du secteur du logement social et une meilleure compréhension des décisions prises par l’autorité
+            de tutelle;
+          </p>
+          <p class="gras">
+            LES PARTIES CONTRACTANTES ONT DÉCIDÉ CE QUI SUIT :
+          </p>
+          <p>
+            <span class="gras">Article 1</span> : la SLRB crée en son sein un comité permanent de concertation entre la SLRB et le SLLS. Cette instance est nommée « Comité de Concertation Sociale ».
+          </p>
+          <p>
+            <span class="gras">Article 2</span> : le Comité se réunit au moins une fois tous les trimestres.
+          </p>
+          <span class="gras">Article 3</span> : de commun accord, le Comité peut être élargi, à titre permanent ou provisoire, à d’autres acteurs sociaux actifs dans le secteur.
+          <p>
+            <span class="gras">Article 4</span> : le SLLS et la SLRB feront connaître à tous leurs partenaires le contenu de la présente convention.
+          </p>
+          <p>
+            <span class="gras">Article 5</span> : la présente convention est conclue pour une durée indéterminée et entrera en vigueur le jour où elle aura recueilli la signature des parties contractantes.
+          </p>
+          <p>
+            Chaque partie pourra y mettre fin moyennant notification par envoi recommandé d’un préavis motivé de 6 mois.
+          </p>
+          <p>
+            Fait à Anderlecht, le
+          </p>
+          <p class="text-center gras">
+            <br> Pour la SLRB
+            <br><br><br><br> Brigitte DE PAUW
+            <br> <br> Présidente
+            <br><br><br><br> Fabrice CUMPS
+            <br><br> Vice-Président – Administrateur délégué
+            <br><br><br><br> Yves LEMMENS
+            <br><br> Directeur général
+            <br><br><br><br> Dorien ROBBEN
+            <br><br> Directrice générale adjointe
+            <br><br><br><br><br><br> Pour le SYNDICAT DES LOCATAIRES
+          </p>
+          <p class="gras">
+            <span class="pull-left">José GARCIA</span> <span class="pull-right">Pierre</span>
+          </p><br><br>
+          <p class="text-center gras">
+            CLEMENT
+          </p>
+          <p class="gras">Secrétaire général</p>
+          <p class="text-center gras">Président</p>
+        </div>
+        <div class="container">
+          <p>Publié dans: CONVENTION COLLECTIVE DE L'HABITAT, VIDÉOS DU SYNDICAT DES LOCATAIRES</p>
+
+        </div>
+      </div>
+    </form>
+    <form class="modal-content animate" action="" id="PhareN133">
+      <span onclick="fermerModal()" class="close">&times;</span>
+      <iframe src="./assent/pdf/Le Phare N°133.pdf#zoom=60" width="100%" height="98%"></iframe>
+    </form>
+    <form class="modal-content animate" action="" id="PhareN132">
+      <span onclick="fermerModal()" class="close">&times;</span>
+      <iframe src="./assent/pdf/Le Phare N°132.pdf#zoom=60" width="100%" height="98%"></iframe>
+    </form>
+    <form class="modal-content animate" action="" id="Vous-voulez-nous-contacter">
+      <span onclick="fermerModal()" class="close">&times;</span>
+      <iframe src="./assent/pdf/Vous-voulez-nous-contacter.pdf#zoom=60" width="100%" height="98%" allowfullscreen></iframe>
+    </form>
+    <form class="modal-content animate" action="" id="les-scientologues-forcent-la-cohabitation">
+      <span onclick="fermerModal()" class="close">&times;</span>
+      <div class="container">
+        <h3 class="colorRED">Les scientologues forcent la cohabitation…</h3>
+        <p>par Syndicat des Locataires le 3 mai 2018</p>
+      </div>
+      <div class="container">
+        <p>
+          Un épisode de plus dans la saga qui concerne les 200 occupants-squatteurs des immeubles 100 à 103 du boulevard de Waterloo. Lundi matin vers cinq heures, une centaine de « travailleurs volontaires » envahissaient l’immense bâtiment, prétextant commencer
+          des travaux d’aménagement pour la société BBAI, propriétaire et proche de l' »Eglise » de scientologie.
+        </p>
+        <p>
+          « Ils sont rentrés, ont cassé une porte et ont commencé à arracher la moquette, démonter les faux plafonds, couper les câbles électriques là ou ils le pouvaient », précise Bart De Win, un des occupants. « C’est clairement de la provocation. Je n’avais
+          en tout cas pas l’impression qu’ils étaient là pour effectuer des travaux. Ils ont essayé de mettre des gens dehors, ouvert la porte d’un de nos occupants âgés d’une soixantaine d’années et l’ont bousculé dehors. »
+        </p>
+        <p>
+          Depuis le 25 octobre dernier pourtant, les occupants étaient plus sereins. Protégés depuis cette date par une décision du Tribunal de première instance de Bruxelles qui avait refusé au propriétaire d’invoquer l’extrême urgence pour les expulser. De la
+          sorte, la justice permettait légalement aux habitants de rester au sein du bâtiment jusqu’à ce que l’affaire soit réglée en justice de paix, la seule autorité habilitée à trancher en matière de logement. « Personne, même le propriétaire, d’un
+          point de vue strictement légal ne peut nous expulser jusqu’à ce qu’il y ait un jugement sur le fond », précise José Garcia, secrétaire du syndicat des locataires. Ce jugement aura lieu jeudi.
+        </p>
+        <p>
+          Welcome to Bagdad
+        </p>
+        <p>
+          « On a une équipe de volontaires de l' »Eglise » de scientologie qui est arrivée ici pour effectuer de petits travaux mais les squatteurs s’y sont opposés », se défend Alain Tizioli, attaché de presse de la BBAI. « Ces bâtiments, on les a achetés. Ils
+          occasionnent des frais et nous avons un calendrier de travaux à respecter. » Malgré le fait que les importants travaux envisagés ne pourront pas avoir lieu sans un permis d’urbanisme qui n’a pas encore été demandé.
+        </p>
+        <p>
+          Inscrit en toutes lettres sur le parvis de la bâtisse, « Back to Bagdad », fait référence à la manière de procéder à l’américaine de ceux que les occupants considèrent comme des envahisseurs. Face à eux, sûrs de leurs droits, les squatteurs ont fait appel
+          aux forces de l’ordre en évitant toute violence. Ils ont ensuite fait appel à leur avocat, privilégiant la négociation à la force. « Leur présence aujourd’hui ne fait que compliquer les choses », a précisé Me Alexis Deswaef, l’avocat des occupants.
+          « Ils ont des avocats et se font représenter dans les négociations mais dans notre dos, ils essaient de se faire justice à eux-mêmes. Dans un état de droit, c’est inacceptable. Tout ce que nous leur demandons, c’est de respecter la décision
+          de justice. »
+        </p>
+        <p>
+          Cohabitation difficile
+        </p>
+        <p>
+          Lundi fin de journée, à la suite de négociations envenimées, un accord entre les occupants, les scientologues et la ville de Bruxelles que l’on sait peu encline à les voir s’installer à cet endroit est tombé. Les scientologues, occuperont le numéro 100
+          et 101 du boulevard de Waterloo, les occupants se regrouperont dans les parties 102 et 103 de l’immense bâtisse. Plus étonnant au terme de ces négociations, pour éviter tout conflit, toute provocation ou tout incident dû à cette cohabitation
+          difficile, c’est la police qui surveillera ce que l’on peut appeler une frontière entre les deux parties du bâtiment.
+        </p>
+        <p>
+          © La Libre Belgique 2006<br> Sébastien Lambotte
+        </p>
+
+      </div>
+      <div class="container">
+        <p>Publié dans: ACTIONS, ARTICLES DE PRESSE, SYNDICAT DES LOCATAIRES</p>
+        <p>Tagué:HUURDERSBOND, SYNDICAT DES LOCATAIRES</p>
+      </div>
+    </form>
+    <form class="modal-content animate" action="" id="locametreWadesda">
+      <span onclick="fermerModal()" class="close">&times;</span>
+      <div class="container">
+        <h3 class="colorRED">Le locamètre, wadesda ?</h3>
+        <p>par Syndicat des Locataires le 14 mars 2018</p>
+      </div>
+      <div class="container">
+        <img class="img-fluid mx-auto d-flex" src="./assent/img/le-locametre-wadesda.png" alt="image cap">
+      </div>
+      <div class="container">
+        <p>
+          <h3 class="text-center colorBLUE">
                                     <span class="gras fuo">Le locamètre, wadesda ?</span></h3>
-                                </p>
-                                <br>
-                                <p class="gras colorBLUE">
-                                        Le concept :
-                                </p>
-                                <p class="colorBLUE">Si tous les politiques posaient des actes (si minimes soient-ils) en faveur du droit à l’habitat, on pourrait raisonnablement conclure que le droit à l’habitat s’améliorerait dans notre pays.</p>
-                                <p class="colorBLUE">Plus il y aura de politiques posant de tels actes, plus ce droit fondamental pour l’ensemble de nos concitoyens se concrétisera.</p>
-                                
-                                <br>
-                                <p>
-                                        Notre organisation a donc décidé de demander aux politiques qui le souhaitent de, non seulement poser des actes en faveur du droit à l’habitat, mais de nous communiquer la teneur de ceux-ci afin que nous puissions les intégrer dans ce que nous appelons le <span class="colorBLUE">« chaudron du locamètre »</span>, leur donner un maximum de publicité en vue d’informer leurs potentiels et futurs électeurs de l’intensité de l’engagement, en cette matière, des actions de leurs futurs candidats.
-                                </p>
-                                <p>
-                                        Afin de rendre accessible à tous cette information, nous allons créer un site internet composé de deux volets. Le premier que l’on nommera « le chaudron du locamètre », symbolisera l’ensemble des actes posés par les politiques participant à l’action. Le second contiendra les scores, les performances individuelles de chaque politique.
-                                </p><br>
-                                <p>
-                                        Tous les actes favorisant le droit à l’habitat n’ayant pas la même valeur, notre organisation et les militants qui participent activement à cette action détermineront le poids chiffré de chaque acte.
-                                </p>
-                                <p>
-                                        Dans ce cadre, déposer une proposition de loi en faveur du droit à l’habitat sera mieux coté que participer à une manifestation.
-                                </p>
-                                <br>
-                                <p>
-                                        Que pouvez-vous faire à votre niveau pour participer à l’augmentation du bien-être locatif ?
-                                </p>
-                                <p>
-                                        La première chose est de rencontrer vos élus et/ou futurs candidats pour leur proposer de participer à notre action.
-                                </p>
-                                <br>
-                                <p>
-                                        Ensuite, vous pouvez également les inviter à poser tel ou tel acte en faveur du droit à l’habitat en fonction notamment de ce qui vous tient particulièrement à cœur.
-                                </p>
-                                <p>
-                                        Par ces démarches, que nous pouvons qualifier de « collectivo-individuelles », nos responsables politiques seront poussés à s’activer très concrètement en faveur du droit à l’habitat.
-                                </p>
-                                <p>
-                                        Votre mobilisation et votre persévérance sont donc capitales dans la réussite de ce projet qui s’étendra sur deux ans puisque, à la fin des élections communales, nous continuerons le même combat dans le cadre des élections régionales du 26 mai 2019.
-                                </p>
-                                <p class="colorBLUE gras">
-                                        Afin de mettre au point avec vous notre stratégie et nos actions, j’ai le plaisir de vous
-                                        convier ce mercredi 28 mars à 18h00 au square Albert Ier, 23 1070 Anderlecht.                            
-                                </p><br>
-                                <p class="colorBLUE gras">
-                                        Je vous y attends très nombreux ! Merci d’avance !
-                                </p>
-                                <p>
-                                        Anderlecht, le 8 mars 2018
-                                <br><br>
-                                        Pour le Syndicat des Locataires
-                                <br><br>       
-                                        José GARCIA
-                                        <br><br>
-                                        Secrétaire général
-                                </p><br><br>
-                                <p class="text-center gras colorBLUE">
-                                                <span class="fuo">De Huurmeter, wadesda ?</span>
-                                </p>
-                                <p class="colorBLUE">
-                                        Het concept :<br><br>
-            
-                                        Als alle politici zich zouden inzetten (hoe minimaal ook) voor het recht op wonen, kunnen we er redelijk van uitgaan dat het recht op wonen in ons land er beter zal van worden.
-                                        <br><br>
-                                        Hoe meer politieke verantwoordelijken daartoe handelingen stellen, hoe meer dit grondrecht voor al onze medeburgers concreter zal worden.
-                                </p>
-                                <p>
-                                        Onze organisatie heeft dus beslist om de politici (die het willen) te vragen handelingen voor het recht op wonen te stellen maar ook om ons de inhoud van deze handelingen te melden zodat we deze kunnen stoppen in wat we de <span class="colorBLUE">« kookketel van de huurmeter »</span> noemen. We geven die handelingen dan de maximale publiciteit om hun potentiële en toekomstige kiezers te informeren over de intensiteit van het engagement op dit gebied en over de acties van hun toekomstige kandidaten.
-                                        <br><br>
-                                        Om deze informatie voor iedereen toegankelijk te maken, zullen we een website opstarten bestaande uit twee luiken. Het eerste luik, namelijk « de kookketel van de huurmeter », symboliseert alle handelingen gesteld door de politici die met de actie meedoen. Het tweede luik bevat de scores, de individuele performances van elke politicus.
-                                </p>
-                                <br>
-                                <p>
-                                        Alle handelingen voor het recht op wonen hebben niet dezelfde waarde, Onze organisatie en de militanten die actief aan deze actie deelnemen, zullen het gecijferde gewicht van elke handeling bepalen.
-                                    <br><br>
-                                        In dit kader heeft het indienen van een wetsvoorstel voor het recht op wonen meer gewicht dan het deelnemen aan een betoging.
-                                </p>
-                                <p>
-                                        Wat kunnen jullie doen om deel te nemen aan de verhoging van het huurwelzijn?
-                                        <br><br><br><br><br><br>
-                                        Eerst en vooral uw verkozenen en/of toekomstige kandidaten ontmoeten om hen te vragen of ze aan onze actie willen deelnemen.
-                                        <br><br><br><br><br><br>
-                                        Vervolgens kunnen jullie de politici aansporen om een bepaalde handeling voor het recht op wonen te stellen in functie van wat jullie nauw aan het hart ligt.
-                                        <br><br><br><br><br><br>
-                                        Door deze “collectieve en individuele” stappen te zetten, zullen onze politieke verantwoordelijken aangemoedigd worden om zich actief en concreet voor het recht op wonen in te zetten.
-                                        <br><br><br><br><br><br>
-                                        Uw mobilisatie en uw volharding zijn dus van essentieel belang voor het slagen van dit project dat twee jaar in beslag zal nemen, daar we na de gemeenteraadsverkiezingen van 14 oktober, met deze actie tot aan de regionale verkiezingen van 26 mei 2019 voortgaan.
-                                </p>
-                                <p class="gras colorBLUE">
-                                        Om onze strategie en onze acties met jullie te bespreken, nodig ik jullie
-                                        <br><br>
-                                        uit op de vergadering van woensdag 28 maart om 18u00, Albert
-                                        <br><br>
-                                        I-square 23 1070 Anderlecht.
-                                        <br><br><br><br>
-                                        Ik verwacht jullie heel talrijk ! Bedankt op voorhand !
-                                </p>
-                                <p>José GARCIA</p>
-                            </div>
-                            <div class="container">
-                                <p>Publié dans: ACTIONS, ARTICLES EN NÉERLANDAIS, LOCAMÈTRE	</p>
-                                <p>Tagué:HUURDERSBOND, LOCAMÈTRE, SYNDICAT DES LOCATAIRES</p>
-                            </div>
-                </form>
-                    
-        
-    </div>
-        <div id="" class="modal">
-                <form class="modal-content animate" action="">
-                      <span onclick="document.getElementById('locametreWadesda').style.display='none'"
-                        class="close">&times;</span>
-        
-                        <div class="container">
-                            <h3 class="colorRED">Le locamètre, wadesda ?</h3>
-                            <p>par Syndicat des Locataires le 14 mars 2018</p>
-                        </div>
-                        <div class="container">
-                                <img class="img-fluid mx-auto d-flex" src="./assent/img/le-locametre-wadesda.png" alt="image cap">
-                        </div>
-                        <div class="container">
-                            <p>José GARCIA</p>
-                        </div>
-                        <div class="container">
-                            <p>Publié dans: ACTIONS, ARTICLES EN NÉERLANDAIS, LOCAMÈTRE	</p>
-                            <p>Tagué:HUURDERSBOND, LOCAMÈTRE, SYNDICAT DES LOCATAIRES</p>
-                        </div>
-                    </form>
-                </div>
+        </p>
+        <br>
+        <p class="gras colorBLUE">
+          Le concept :
+        </p>
+        <p class="colorBLUE">Si tous les politiques posaient des actes (si minimes soient-ils) en faveur du droit à l’habitat, on pourrait raisonnablement conclure que le droit à l’habitat s’améliorerait dans notre pays.</p>
+        <p class="colorBLUE">Plus il y aura de politiques posant de tels actes, plus ce droit fondamental pour l’ensemble de nos concitoyens se concrétisera.</p>
+
+        <br>
+        <p>
+          Notre organisation a donc décidé de demander aux politiques qui le souhaitent de, non seulement poser des actes en faveur du droit à l’habitat, mais de nous communiquer la teneur de ceux-ci afin que nous puissions les intégrer dans ce que nous appelons
+          le <span class="colorBLUE">« chaudron du locamètre »</span>, leur donner un maximum de publicité en vue d’informer leurs potentiels et futurs électeurs de l’intensité de l’engagement, en cette matière, des actions de leurs futurs candidats.
+        </p>
+        <p>
+          Afin de rendre accessible à tous cette information, nous allons créer un site internet composé de deux volets. Le premier que l’on nommera « le chaudron du locamètre », symbolisera l’ensemble des actes posés par les politiques participant à l’action.
+          Le second contiendra les scores, les performances individuelles de chaque politique.
+        </p><br>
+        <p>
+          Tous les actes favorisant le droit à l’habitat n’ayant pas la même valeur, notre organisation et les militants qui participent activement à cette action détermineront le poids chiffré de chaque acte.
+        </p>
+        <p>
+          Dans ce cadre, déposer une proposition de loi en faveur du droit à l’habitat sera mieux coté que participer à une manifestation.
+        </p>
+        <br>
+        <p>
+          Que pouvez-vous faire à votre niveau pour participer à l’augmentation du bien-être locatif ?
+        </p>
+        <p>
+          La première chose est de rencontrer vos élus et/ou futurs candidats pour leur proposer de participer à notre action.
+        </p>
+        <br>
+        <p>
+          Ensuite, vous pouvez également les inviter à poser tel ou tel acte en faveur du droit à l’habitat en fonction notamment de ce qui vous tient particulièrement à cœur.
+        </p>
+        <p>
+          Par ces démarches, que nous pouvons qualifier de « collectivo-individuelles », nos responsables politiques seront poussés à s’activer très concrètement en faveur du droit à l’habitat.
+        </p>
+        <p>
+          Votre mobilisation et votre persévérance sont donc capitales dans la réussite de ce projet qui s’étendra sur deux ans puisque, à la fin des élections communales, nous continuerons le même combat dans le cadre des élections régionales du 26 mai 2019.
+        </p>
+        <p class="colorBLUE gras">
+          Afin de mettre au point avec vous notre stratégie et nos actions, j’ai le plaisir de vous convier ce mercredi 28 mars à 18h00 au square Albert Ier, 23 1070 Anderlecht.
+        </p><br>
+        <p class="colorBLUE gras">
+          Je vous y attends très nombreux ! Merci d’avance !
+        </p>
+        <p>
+          Anderlecht, le 8 mars 2018
+          <br><br> Pour le Syndicat des Locataires
+          <br><br> José GARCIA
+          <br><br> Secrétaire général
+        </p><br><br>
+        <p class="text-center gras colorBLUE">
+          <span class="fuo">De Huurmeter, wadesda ?</span>
+        </p>
+        <p class="colorBLUE">
+          Het concept :<br><br> Als alle politici zich zouden inzetten (hoe minimaal ook) voor het recht op wonen, kunnen we er redelijk van uitgaan dat het recht op wonen in ons land er beter zal van worden.
+          <br><br> Hoe meer politieke verantwoordelijken daartoe handelingen stellen, hoe meer dit grondrecht voor al onze medeburgers concreter zal worden.
+        </p>
+        <p>
+          Onze organisatie heeft dus beslist om de politici (die het willen) te vragen handelingen voor het recht op wonen te stellen maar ook om ons de inhoud van deze handelingen te melden zodat we deze kunnen stoppen in wat we de <span class="colorBLUE">« kookketel van de huurmeter »</span>          noemen. We geven die handelingen dan de maximale publiciteit om hun potentiële en toekomstige kiezers te informeren over de intensiteit van het engagement op dit gebied en over de acties van hun toekomstige kandidaten.
+          <br><br> Om deze informatie voor iedereen toegankelijk te maken, zullen we een website opstarten bestaande uit twee luiken. Het eerste luik, namelijk « de kookketel van de huurmeter », symboliseert alle handelingen gesteld door de politici die
+          met de actie meedoen. Het tweede luik bevat de scores, de individuele performances van elke politicus.
+        </p>
+        <br>
+        <p>
+          Alle handelingen voor het recht op wonen hebben niet dezelfde waarde, Onze organisatie en de militanten die actief aan deze actie deelnemen, zullen het gecijferde gewicht van elke handeling bepalen.
+          <br><br> In dit kader heeft het indienen van een wetsvoorstel voor het recht op wonen meer gewicht dan het deelnemen aan een betoging.
+        </p>
+        <p>
+          Wat kunnen jullie doen om deel te nemen aan de verhoging van het huurwelzijn?
+          <br><br><br><br><br><br> Eerst en vooral uw verkozenen en/of toekomstige kandidaten ontmoeten om hen te vragen of ze aan onze actie willen deelnemen.
+          <br><br><br><br><br><br> Vervolgens kunnen jullie de politici aansporen om een bepaalde handeling voor het recht op wonen te stellen in functie van wat jullie nauw aan het hart ligt.
+          <br><br><br><br><br><br> Door deze “collectieve en individuele” stappen te zetten, zullen onze politieke verantwoordelijken aangemoedigd worden om zich actief en concreet voor het recht op wonen in te zetten.
+          <br><br><br><br><br><br> Uw mobilisatie en uw volharding zijn dus van essentieel belang voor het slagen van dit project dat twee jaar in beslag zal nemen, daar we na de gemeenteraadsverkiezingen van 14 oktober, met deze actie tot aan de regionale
+          verkiezingen van 26 mei 2019 voortgaan.
+        </p>
+        <p class="gras colorBLUE">
+          Om onze strategie en onze acties met jullie te bespreken, nodig ik jullie
+          <br><br> uit op de vergadering van woensdag 28 maart om 18u00, Albert
+          <br><br> I-square 23 1070 Anderlecht.
+          <br><br><br><br> Ik verwacht jullie heel talrijk ! Bedankt op voorhand !
+        </p>
+        <p>José GARCIA</p>
+      </div>
+      <div class="container">
+        <p>Publié dans: ACTIONS, ARTICLES EN NÉERLANDAIS, LOCAMÈTRE </p>
+        <p>Tagué:HUURDERSBOND, LOCAMÈTRE, SYNDICAT DES LOCATAIRES</p>
+      </div>
+    </form>
+
+
+  </div>
+  <div id="" class="modal">
+    <form class="modal-content animate" action="">
+      <span onclick="document.getElementById('locametreWadesda').style.display='none'" class="close">&times;</span>
+
+      <div class="container">
+        <h3 class="colorRED">Le locamètre, wadesda ?</h3>
+        <p>par Syndicat des Locataires le 14 mars 2018</p>
+      </div>
+      <div class="container">
+        <img class="img-fluid mx-auto d-flex" src="./assent/img/le-locametre-wadesda.png" alt="image cap">
+      </div>
+      <div class="container">
+        <p>José GARCIA</p>
+      </div>
+      <div class="container">
+        <p>Publié dans: ACTIONS, ARTICLES EN NÉERLANDAIS, LOCAMÈTRE </p>
+        <p>Tagué:HUURDERSBOND, LOCAMÈTRE, SYNDICAT DES LOCATAIRES</p>
+      </div>
+    </form>
+  </div>
 
 
 
-    <script src="./assent/script.js"></script>
-    <script src="./assent/tableau-tri.js"></script>
-    <script src="./assent/pagination.js"></script>
+  <script src="./assent/script.js"></script>
+  <script src="./assent/tableau-tri.js"></script>
+  <script src="./assent/pagination.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"crossorigin="anonymous"></script>
-    
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"crossorigin="anonymous"></script>
-    
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+</body>
 
 </html>
