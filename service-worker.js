@@ -24,8 +24,8 @@ var urlsToCache = [
   '/becode-AHOD2/assent/img/slrb.png',
   '/becode-AHOD2/assent/img/video discriminations.png',//ok
   '/becode-AHOD2/assent/pdf/Le Phare N°132.pdf',
-  '/becode-AHOD2/assent/pdf/Le Phare N°133.pdf'//,
-  // '/becode-AHOD2/assent/pdf/Vous-voulez-nous-contacter.pdf',
+  '/becode-AHOD2/assent/pdf/Le Phare N°133.pdf',
+  '/becode-AHOD2/assent/pdf/Vous-voulez-nous-contacter.pdf'//,
   // '/becode-AHOD2/assent/vedeo/BRIQUE D’OR 2018 SLRB.mp4',
   // '/becode-AHOD2/assent/js/pagination.js',
   // '/becode-AHOD2/assent/js/script.js',
