@@ -11,6 +11,6 @@
   }*/
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker
-             .register('./service-worker.js')
+             .register('./serv-work.js')
              .then(function() { console.log('Service Worker Registered'); });
   }
