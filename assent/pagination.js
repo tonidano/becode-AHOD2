@@ -88,8 +88,8 @@ function w3RemoveClass(element, name) {
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function(){
     var current = document.getElementsByClassName("btn active");
-    console.log([0].className);
-    current[0].className = current[O].className.replace(" active","");
+    //console.log(current);
+    current[0].className = current[0].className.replace(" active","");
     this.className += " active";
   });
 }
